@@ -1,42 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML over a-frame</title>
      <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-     <!--<link rel="stylesheet" href="360style.css">-->
-     <style>
-        body {
-          margin: 0;
-          font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        .top-container {
-          background-color: #f1f1f1;
-          padding: 30px;
-          text-align: center;
-        }
-        
-        .header {
-          padding: 10px 16px;
-          background: #555;
-          color: #f1f1f1;
-        }
-        
-        .content {
-          padding: 16px;
-        }
-        
-        .sticky {
-          position: fixed;
-          top: 0;
-          width: 100%;
-        }
-        
-        .sticky + .content {
-          padding-top: 102px;
-        }
-        </style>
-        
   </head>
   <body>
     <a-scene>
@@ -52,7 +18,7 @@
             <h2>My Header</h2>
         </div>
         
-        <div class="content">
+        <!--<div class="content">
             <h3>On Scroll Sticky Header</h3>
             <p>The header will stick to the top when you reach its scroll position.</p>
             <p>Scroll back up to remove the sticky effect.</p>
@@ -79,7 +45,7 @@
                 header.classList.remove("sticky");
             }
             }
-        </script>
+        </script> -->
     </a-scene>
 
   </body>
