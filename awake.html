@@ -7,7 +7,7 @@
   </head>
   <body>
     <three60>
-        <a-scene vr-mode-ui="enabled: false">
+        <a-scene xr-mode-ui="enabled: false">
             <a-sky src="./images/R0011479_20240123183214.JPG" rotation="0 -90 0"></a-sky>
 
             <div class="flexb">
@@ -17,12 +17,15 @@
                 <div class="content">
                     <!--<div id="menu" style="position: fixed; top: 0; left:0; right: 0; background: rgba(30, 30, 30, 0.2); padding: 10px">-->
                 </div>
+                <div id="descriptive">
+                    <h4>Description of the scene goes in here.  This should give links to possible options and information about what can be seen and hints as to how to interact with the environment.</h4>
+                </div>
                 <div class="base">
                     <div id="blank">
                         <!--this space intentionally left blank ;)-->
                     </div>
                     <div class="grid-compass">
-                        <div class="nav_nw">NW</div>
+                        <button class="nav_nw" type="submit">NW</button>
                         <div class="nav_n">N</div>
                         <div class="nav_ne">NE</div> 
                         <div class="nav_w">W</div>
