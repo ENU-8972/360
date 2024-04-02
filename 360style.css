@@ -56,4 +56,6 @@ body {
     background-size: cover;
 }
 
-   
+#descriptive {
+    z-index: 1000;
+}
