@@ -45,7 +45,7 @@ body {
 
 .grid-compass {
     display: grid;
-    grid-template-columns: auto initial initial initial auto auto auto auto auto;
+    grid-template-columns: auto initial initial initial auto auto auto auto;
     grid-gap: 3px;
     background-color: rgb(128, 125, 124);
     padding: 3px;
@@ -58,25 +58,25 @@ body {
     font-size: 12px;
    }
 
-/*   
+   
 .invtitle {
     grid-column-start: 6;
-    grid-column-end: 7;
+    grid-column-end: 8;
 }
 
 .invblank {
     grid-column-start: 6;
-    grid-column-end: 7;
+    grid-column-end: 8;
 }
 
 .slot1 {
     grid-column-start: 6;
-    grid-column-end: 7;
+    grid-column-end: 8;
 }
 
 .slot2 {
     grid-column-start: 6;
-    grid-column-end: 7;
+    grid-column-end: 8;
 }
 
 .slot3 {
@@ -89,12 +89,12 @@ body {
     grid-column-end: 3;
 }
 
-/*.gblank {
+.gblank {
+    z-index: -1
+}
 
-}*/
-*/
 .compasscol1{
-    min-width: 60px;
+    min-width: 10px;
 }
 
 
