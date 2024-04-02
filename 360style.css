@@ -27,7 +27,7 @@ body {
 }
 
 .descriptive {
-    position: fixed;
+    position: inherit;
     z-index: 1000;
 }
 
