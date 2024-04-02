@@ -41,7 +41,7 @@ body {
 }
 
 .base > div {
-    width: 33.3%;
+    width: 100%;
 }
 
 .grid-compass {
