@@ -29,7 +29,7 @@ body {
 
 .descriptive {
     flex: 0 1 auto;
-    position: fixed;
+    position: inherit;
     z-index: 1000;
 }
 
