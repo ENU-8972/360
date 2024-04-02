@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html class="a-fullscreen">
+<html>
   <head>
     <title>deadLINE</title>
-    <link rel="stylesheet" href="360style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="360style.css">-->
+    <style>
+        body, html{
+            height: 100%;
+            margin: 0;
+        } 
+
+        .backimg{
+            background-image: url("./images/CheckIn.png");
+            height: 100%; 
+            background-position: center;
+            background-size: cover;   
+            background-repeat: no-repeat;
+        }
+    </style>
   </head>
   <body>
-    <a href="awake.html">
-        <img id="checkin" alt="check-in to myNapier course">   
-    </a>
+    <div class="backimg" onclick="location.href='awake.html';" style="cursor: pointer;">
+    </div>   
   </body>
 </html>
