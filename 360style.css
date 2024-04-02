@@ -32,6 +32,8 @@ body {
     flex: 0 1 auto;
     position: inherit;
     z-index: 1000;
+    color: rgba(243, 243, 243, 0.8);
+    background: rgba(30, 30, 30, 0.45);
 }
 
 .base {
@@ -41,6 +43,7 @@ body {
 }
 
 .base > div {
+    background: rgba(30, 30, 30, 0.45);
     width: 100%;
 }
 
@@ -91,7 +94,7 @@ body {
 }
 
 .gblank {
-    background-color: tomato;
+    background: tomato;
 }
 
 .compasscol1{
