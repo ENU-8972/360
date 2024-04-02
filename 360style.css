@@ -1,16 +1,55 @@
-body {
-    background-image: url("Coyotes.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+.flexb {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
 }
 
-menu {
+.content{
+    flex: 1;
+}
+
+body {
+/*    background-image: url("Coyotes.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;*/
+}
+
+.three60{
+
+}
+
+.menu {
     position: fixed; 
     top: 0;
     left:0; 
     right: 0; 
-    background: rgba(30, 30, 30, 0.2); 
+    background: rgba(30, 30, 30, 0.75); 
     padding: 10px;
     text-align: right;
 }
+
+.base {
+    display: flex;
+}
+
+.base > div {
+    width: 33.3%;
+}
+
+.grid-compass {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    background-color: rgb(128, 125, 124);
+    padding: 5px;
+   }
+   .grid-compass > div {
+    background-color: rgba(163, 167, 167);
+    text-align: center;
+    padding: 10px 0;
+    color:rgba(243, 243, 243, 0.8);
+    font-size: 15px;
+   }
+
+   
