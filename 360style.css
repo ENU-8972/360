@@ -46,7 +46,7 @@ body {
 
 .grid-compass {
     display: grid;
-    grid-template-columns: auto initial initial initial auto auto auto auto auto;
+    grid-template-columns: auto initial initial initial auto auto auto auto;
     grid-gap: 3px;
     background-color: rgb(128, 125, 124);
     padding: 3px;
@@ -91,7 +91,7 @@ body {
 }
 
 .gblank {
-    z-index: -1
+    background-color: tomato;
 }
 
 .compasscol1{
