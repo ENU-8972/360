@@ -26,6 +26,11 @@ body {
     z-index: 1000;
 }
 
+.descriptive {
+    position: fixed;
+    z-index: 1000;
+}
+
 .base {
     display: flex;
     z-index: 1000;
@@ -54,8 +59,4 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-
-#descriptive {
-    z-index: 1000;
 }
