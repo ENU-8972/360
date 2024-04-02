@@ -45,7 +45,7 @@ body {
 
 .grid-compass {
     display: grid;
-    grid-template-columns: auto initial initial initial auto auto auto auto;
+    grid-template-columns: auto initial initial initial auto auto auto auto auto;
     grid-gap: 3px;
     background-color: rgb(128, 125, 124);
     padding: 3px;
@@ -60,32 +60,32 @@ body {
 
 .invtitle {
     grid-column-start: 6;
-    grid-column-end: 8;
+    grid-column-end: 9;
 }
 
 .invblank {
     grid-column-start: 6;
-    grid-column-end: 8;
+    grid-column-end: 9;
 }
 
 .slot1 {
     grid-column-start: 6;
-    grid-column-end: 8;
+    grid-column-end: 9;
 }
 
 .slot2 {
     grid-column-start: 6;
-    grid-column-end: 8;
+    grid-column-end: 9;
 }
 
 .slot3 {
     grid-column-start: 6;
-    grid-column-end: 8;
+    grid-column-end: 9;
 }
 
 .compassblank {
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
 }
 
 .gblank {
