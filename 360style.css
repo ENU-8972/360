@@ -45,7 +45,7 @@ body {
 
 .grid-compass {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
     grid-gap: 3px;
     background-color: rgb(128, 125, 124);
     padding: 3px;
@@ -57,6 +57,38 @@ body {
     color:rgba(243, 243, 243, 0.8);
     font-size: 12px;
    }
+
+.invtitle {
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+
+.invblank {
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+
+.slot1 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+
+.slot2 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+
+.slot3 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+
+.compassblank {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
 
 #checkin{
     background-repeat: no-repeat;
