@@ -1,7 +1,7 @@
 .flexb {
     display: flex;
     flex-direction: column;
-    min-height: 90vh;
+   /* min-height: 90vh;*/
     z-index: 1000;
 }
 
@@ -23,7 +23,7 @@
     left:0; 
     right: 0; 
     background: rgba(30, 30, 30, 0.75); 
-    padding: 10px;
+    padding: 5px;
     text-align: right;
     z-index: 1000;
 }
@@ -40,16 +40,16 @@
 .grid-compass {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 5px;
+    grid-gap: 3px;
     background-color: rgb(128, 125, 124);
-    padding: 5px;
+    padding: 3px;
    }
    .grid-compass > div {
     background-color: rgba(163, 167, 167);
     text-align: center;
     padding: 10px 0;
     color:rgba(243, 243, 243, 0.8);
-    font-size: 15px;
+    font-size: 12px;
    }
 
    
