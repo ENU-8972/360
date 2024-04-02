@@ -4,6 +4,7 @@
     flex-direction: column;
    /* min-height: 90vh;*/
     z-index: 1000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .content{
@@ -11,10 +12,7 @@
 }
 
 
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-/*    background-image: url("Coyotes.jpg");
+/*body {/*    background-image: url("Coyotes.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
