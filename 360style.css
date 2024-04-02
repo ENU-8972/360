@@ -7,7 +7,7 @@
 }
 
 .content{
-    flex: 1;
+    flex: 1 1 auto;
 }
 
 
@@ -16,7 +16,7 @@ body {
 }
 
 .menu {
-    flex: 0;
+    flex: 0 1 auto;
     position: fixed; 
     top: 0;
     left:0; 
@@ -28,13 +28,13 @@ body {
 }
 
 .descriptive {
-    flex: 2;
-    position: inherit;
+    flex: 0 1 auto;
+    position: fixed;
     z-index: 1000;
 }
 
 .base {
-    flex: 3;
+    flex: 0 1 auto;
     display: flex;
     z-index: 1000;
 }
