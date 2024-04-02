@@ -28,10 +28,12 @@ body {
     background: rgba(30, 30, 30, 0.75); 
     padding: 10px;
     text-align: right;
+    z-index: 10;
 }
 
 .base {
     display: flex;
+    z-index: 15;
 }
 
 .base > div {
