@@ -34,6 +34,9 @@ body {
     z-index: 1000;
     color: rgba(243, 243, 243, 0.8);
     background: rgba(30, 30, 30, 0.45);
+    margin: 1%;
+    border-radius: 15px;
+    padding: 1%;
 }
 
 .base {
@@ -44,64 +47,37 @@ body {
 
 .base > div {
     background: rgba(30, 30, 30, 0.45);
-    width: 100%;
+    width: 20%;
 }
 
 .grid-compass {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-columns:auto auto auto auto;
     grid-gap: 3px;
     background-color: rgb(128, 125, 124);
-    padding: 3px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 1%;
    }
-   .grid-compass > div {
+
+.grid-compass > div {
     background-color: rgba(163, 167, 167);
     text-align: center;
-    padding: 10px 0;
     color:rgba(243, 243, 243, 0.8);
     font-size: 12px;
+    height: 60px;
    }
 
-   
-.invtitle {
-    grid-column-start: 6;
-    grid-column-end: 8;
-}
-
-.invblank {
-    grid-column-start: 6;
-    grid-column-end: 8;
-}
-
-.slot1 {
-    grid-column-start: 6;
-    grid-column-end: 8;
-}
-
-.slot2 {
-    grid-column-start: 6;
-    grid-column-end: 8;
-}
-
-.slot3 {
-    grid-column-start: 6;
-    grid-column-end: 8;
-}
-
-.compassblank {
-    grid-column-start: 2;
-    grid-column-end: 5;
-}
-
-.gblank {
-    background: tomato;
-}
-
-.compasscol1{
+.compassbtn {
     min-width: 10px;
+    margin: 2%;
+    height: 95%;
 }
 
-
+.invslot {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
 
 #checkin{
     background-repeat: no-repeat;
