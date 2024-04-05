@@ -30,24 +30,27 @@ body {
 
 .descriptive {
     flex: 0 1 auto;
-    position: inherit;
+    /*position: inherit;*/
     z-index: 1000;
     color: rgba(243, 243, 243, 0.8);
     background: rgba(30, 30, 30, 0.45);
     margin: 1%;
     border-radius: 15px;
     padding: 1%;
+    width: max-content;
 }
 
 .base {
     flex: 0 1 auto;
     display: flex;
+    justify-content: space-between;
     z-index: 1000;
 }
 
 .base > div {
     background: rgba(30, 30, 30, 0.45);
-    width: 20%;
+    width: auto;
+    height: 150px;
 }
 
 .grid-compass {
@@ -58,6 +61,7 @@ body {
     padding: 10px;
     border-radius: 15px;
     margin: 1%;
+    min-width: fit-content;
    }
 
 .grid-compass > div {
@@ -69,7 +73,7 @@ body {
    }
 
 .compassbtn {
-    min-width: 10px;
+    min-width: 30%;
     margin: 2%;
     height: 95%;
 }
