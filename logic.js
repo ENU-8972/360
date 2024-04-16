@@ -1,12 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Set current page URL
-  const thisURL = window.location.href;
+    var urlsub = window.location.href;
+    const thisURL = urlsub.substring(urlsub.lastIndexOf('/')+1);
+    //const thisURL = substring(window.location.href.lastIndexOf('/')+1);
+    alert(thisURL);
+});
 
-  function handleButtonClick(buttonId) {
+function handleButtonClick(buttonId) {
     //Check the URL and possible outcomes
     //List of each URL
+    var urls = window.location.href;
+    const tURL = urls.substring(urls.lastIndexOf('/')+1);
+    alert(tURL);
+
+    alert(buttonId);
     let newURL;
-    switch(thisURL === "") {
+    switch(tURL) {
         case "awake.html":
             if (buttonId === "UP") {
                 newURL = "lectureUp.html";
@@ -15,20 +24,20 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 newURL = "awake.html";
             }
-        
-        case "lectureUp":
-
-        default:
     }
+
+    alert(newURL);
 
     //Load the URL just calculated
     window.location.href = newURL;
-  }
+    
+};
+
+
+document.getElementById("UP").addEventListener("click", function() { 
+    handleButtonClick("UP")
 });
 
-document.getElementById("UP").addEventListener("click", function() {
-    handleButtonClick("UP");
-});
 
 document.getElementById("DOWN").addEventListener("click", function() {
     handleButtonClick("DOWN");
