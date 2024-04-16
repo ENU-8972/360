@@ -1,43 +1,78 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Set current page URL
-    var urlsub = window.location.href;
-    const thisURL = urlsub.substring(urlsub.lastIndexOf('/')+1);
-    //const thisURL = substring(window.location.href.lastIndexOf('/')+1);
-    alert(thisURL);
-});
+//document.addEventListener("DOMContentLoaded", function() {
+// // Set current page URL
+//    var urlsub = window.location.href;
+//    const thisURL = urlsub.substring(urlsub.lastIndexOf('/')+1);
+//    //const thisURL = substring(window.location.href.lastIndexOf('/')+1);
+//    alert(thisURL);
+//});
 
 function handleButtonClick(buttonId) {
     //Check the URL and possible outcomes
     //List of each URL
     var urls = window.location.href;
     const tURL = urls.substring(urls.lastIndexOf('/')+1);
-    alert(tURL);
 
-    alert(buttonId);
+    let nonav;
+    let innerv;
     let newURL;
     switch(tURL) {
         case "awake.html":
-            if (buttonId === "UP") {
-                newURL = "lectureUp.html";
-            } else if (buttonId === "DOWN") {
+            switch(buttonId) {
+                case "UP":
+                    nonav = false;
+                    newURL = "lectureUp.html";
+                    break;
+                    
+                case "DOWN":
+                    nonav = false;
+                    newURL = "index.html";
+                    break;
+
+                default:
+                    alert("default");
+                    innerv = "Not going to happen";
+                    break;
+            }
+            break;
+     /*       
+                if (buttonId === "UP") {
+                
+            }            
+            if (buttonId === "DOWN") {
+                nonav = false;
                 newURL = "index.html";
             } else {
-                newURL = "awake.html";
+                innerv = "Really!";
+                alert(innerv);
             }
+       */ 
+        case "lectureUp":
+            if (buttonId === "NW") {
+                innerv = "Not going to happen";
+            }
+            break;
+    }
+    
+    if (innerv === ""){
+        document.getElementById("innervoice").innerHTML = innerv;
     }
 
-    alert(newURL);
-
-    //Load the URL just calculated
-    window.location.href = newURL;
+    if (nonav === false) {
+        //Load the URL just calculated
+        window.location.href = newURL;
+    }
     
 };
 
-
-document.getElementById("UP").addEventListener("click", function() { 
+const nUp = document.getElementById("UP");
+nUp.addEventListener("click", function() { 
     handleButtonClick("UP")
 });
 
+
+//document.getElementById("UP").addEventListener("click", function() { 
+//    handleButtonClick("UP")
+//});
 
 document.getElementById("DOWN").addEventListener("click", function() {
     handleButtonClick("DOWN");
@@ -48,7 +83,7 @@ document.getElementById("SEARCH").addEventListener("click", function() {
 });
 
 document.getElementById("BACK").addEventListener("click", function() {
-    handleButtonClick("BACK");
+    window.history.back();
 });
 
 document.getElementById("INV").addEventListener("click", function() {
