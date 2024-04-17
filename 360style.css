@@ -92,11 +92,11 @@ a {
     grid-column-end: 7;
 }
 
-.innervoice {
+#innervoice {
     background-color: hotpink;
     height: max-content;
     color: #000;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 #checkin{
