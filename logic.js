@@ -64,15 +64,36 @@ function handleButtonClick(buttonId) {
     
 };
 
-const nUp = document.getElementById("UP");
-nUp.addEventListener("click", function() { 
+
+function activateButtonClick(event) {
+    event.preventDefault(); // Don't do default behavior - to stop the URL getting the # added
+  
+    // Get the target button ID
+    var targetButtonId = event.target.getAttribute('data-target');
+  
+    // Find the button element by its ID
+    var button = document.getElementById(targetButtonId);
+  
+    if (button) {
+      // Trigger the click event of the button
+      button.click();
+    } else {
+      alert("I have no way of doing that");
+    }
+  }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var activateButton = document.querySelectorAll('.activateBtn');
+    activateButton.forEach(function(link){
+        link.addEventListener("click", activateButtonClick);
+    });
+})
+
+
+document.getElementById("UP").addEventListener("click", function() { 
     handleButtonClick("UP")
 });
-
-
-//document.getElementById("UP").addEventListener("click", function() { 
-//    handleButtonClick("UP")
-//});
 
 document.getElementById("DOWN").addEventListener("click", function() {
     handleButtonClick("DOWN");
