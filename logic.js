@@ -64,15 +64,15 @@ function handleButtonClick(buttonId) {
     
 };
 
-const nUp = document.getElementById("UP");
-nUp.addEventListener("click", function() { 
-    handleButtonClick("UP")
-});
-
-
-//document.getElementById("UP").addEventListener("click", function() { 
+//const nUp = document.getElementById("UP");
+//nUp.addEventListener("click", function() { 
 //    handleButtonClick("UP")
 //});
+
+
+document.getElementById("UP").addEventListener("click", function() { 
+    handleButtonClick("UP")
+});
 
 document.getElementById("DOWN").addEventListener("click", function() {
     handleButtonClick("DOWN");
