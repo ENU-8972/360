@@ -9,6 +9,11 @@
         <source src="video/lecture.mp4" type="video/mp4">
         If you see this your browser does not support the video tag.  You will miss your deadLINE.
     </video>
-    <script scr="utility.js" defer></script>
+    <script type="text/javascript">
+        document.getElementById("lecture").addEventListener("ended", endHandler, false);
+        function endHandler(e) {
+            window.location.href="awake.html";
+        }
+    </script>
 </body>
 </html>
