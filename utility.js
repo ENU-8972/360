@@ -1,9 +1,8 @@
 //Play video and load awake sequence when video has finished
 var video = document.getElementById("lecture");
-video.addEventListener("ended", function(){
-    window.location.href = "awake.html";
+video.addEventListener('ended', function(){
+    window.location.href="awake.html";
 });
-
 
 document.addEventListener('mousedown', function (event) {
     // Disable text selection on mousedown
