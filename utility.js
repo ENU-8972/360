@@ -19,7 +19,7 @@ document.addEventListener("mousemove", function(event) {
 
 //When mouseDown is true stop text being selected when the mouse is moved
 document.addEventListener("dblclick", function(event) {
-    if (mouseDown) {  //true
+    if ((mouseDown)||(event.detail===2)) {  //true
         event.preventDefault();
     }
 });
