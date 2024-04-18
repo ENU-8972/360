@@ -1,27 +1,19 @@
-document.addEventListener('mousedown', function (event) {
-    // Disable text selection on mousedown
-    // Stop the text in the divs being selected when moving the a-frame 360 image
-    disableTextSelection();
+//Stop mouse down scrolling from selecting text when moving the a-frame
+var mouseDown = false;
+
+//Create even listeners that know if the mousedown is up/down
+document.addEventListener("mousedown", function(event){
+    mouseDown = true;
 });
 
-document.addEventListener('scroll', function (event) {
-    // Disable text selection while scrolling
-    // Stop the text in the divs being selected when moving the a-frame 360 image    
-    disableTextSelection();
+document.addEventListener("mouseup", function(event){
+    mouseDown = false;
 });
 
-function disableTextSelection() {
-    // Check if there is any text selected on the webpage
-    // there shouldn't be.  If there is unselect it.
-    if (typeof window.getSelection != 'undefined') {
-        var selection = window.getSelection();
-        // Check if text selected
-        if (selection.rangeCount > 0) {
-            // Remove selection
-            selection.removeAllRanges();
-        }
-    } else if (typeof document.selection != 'undefined') {
-        // For older versions of Internet Explorer
-        document.selection.empty();
+//When mouseDown is true stop text being selected when the mouse is moved
+document.addEventListener("mousemove", function(event) {
+    if (mouseDown) {  //true
+        event.preventDefault();
     }
-}
+});
+
