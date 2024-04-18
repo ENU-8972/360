@@ -4,24 +4,6 @@
     <title>deadLINE</title>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <link rel="stylesheet" href="360style.css">
-<!--    <style>
-        body {
-            animation-name: fadeInAnimation ease 4s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-            @keyframes fadeInAnimation {
-                0% {
-                    opacity: 0;
-                }
-                    100% {
-                    opacity: 1;
-                }        
-            }
-        }
-    </style>>-->
-    <script>window.onload = function() {
-        document.getElementById("awakening").play();
-    }</script>
   </head>
   <body>
     <audio id="awakening" src="audio/awakening.mp3" type="audio/mp3" autoplay="autoplay"></audio>
@@ -74,5 +56,8 @@
     </three60>  
     <script src="logic.js"></script>    
     <script src="utility.js"></script>
+    <script>window.onload = function() {
+        document.getElementById("awakening").play();
+    }</script>
   </body>
 </html>

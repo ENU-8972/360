@@ -126,7 +126,8 @@ a {
     background-color: rgba(0,0,0,1);
     opacity: 1;
     z-index: 9999;
-    animation: fadefromblack 4s ease-out forwards;
+    animation: fadefromblack 5s ease-out forwards;
+    pointer-events: none;
 }
 
 @keyframes fadefromblack {
