@@ -1,3 +1,5 @@
+//UI utility
+
 //Stop mouse down scrolling from selecting text when moving the a-frame
 var mouseDown = false;
 
@@ -24,3 +26,50 @@ document.addEventListener("dblclick", function(event) {
         event.preventDefault();
     }
 });
+
+//Show and hide menu options
+
+//Hide main description and leave only the location title
+
+//Show detail image
+
+//Show innervoice bubbles for a limited time
+
+//Show remaining time
+
+//
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    //Inventory
+    let inventory = [null, null, null]; //inventory placeholders
+
+    //Get items from local storage
+
+    function getInvItem(invId) {
+        //Change the main description to show the inventory item
+        var invItem = localstorage.getItem(invId)
+    };
+
+});
+
+
+/*
+//Storage
+    //Procedures for storing game state, location and inventory information
+
+    //Reset all storage - called when awakening sequence triggered
+    function resetstorage() {
+        localStorage.clear();
+    };
+
+    function setGameTime(time) {
+        localStorage.setItem("GameTime",time);
+    };
+
+    function addTurnGameTime() {
+        var origtime = localStorage.getItem("GameTime");
+        localStorage.setGameTime("GameTime", origtime + 5);
+        //update the screen with the new time
+    };
+*/
