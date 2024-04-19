@@ -1,3 +1,12 @@
+body {
+    background-color: #000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: hotpink;
+    text-decoration-line: none;
+}
 
 .flexb {
     display: flex;
@@ -6,37 +15,25 @@
     z-index: 1000;
 }
 
-.content{
+.content {
     flex: 1 1 auto;
     min-height: 85%;
 }
 
-
-body {
-    background-color:#000;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .menu {
     flex: 0 1 auto;
-    position: fixed; 
+    position: fixed;
     top: 0;
-    left:0; 
-    right: 0; 
-    background: rgba(30, 30, 30, 0.45); 
+    left: 0;
+    right: 0;
+    background: rgba(30, 30, 30, 0.45);
     padding: 5px;
     text-align: right;
     z-index: 1000;
 }
 
-a {
-    color: hotpink;
-    text-decoration-line: none;    
-  }
-
 .descriptive {
     flex: 0 1 auto;
-    /*position: inherit;*/
     z-index: 1000;
     color: rgba(243, 243, 243, 0.8);
     background: rgba(30, 30, 30, 0.45);
@@ -61,7 +58,7 @@ a {
 
 .grid-compass {
     display: grid;
-    grid-template-columns:auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-gap: 3px;
     background-color: rgb(128, 125, 124);
     padding: 10px;
@@ -70,15 +67,15 @@ a {
     min-width: fit-content;
     min-height: fit-content;
     height: max-content;
-   }
+}
 
 .grid-compass > div {
     background-color: rgba(163, 167, 167);
     text-align: center;
-    color:rgba(243, 243, 243, 0.8);
+    color: rgba(243, 243, 243, 0.8);
     font-size: 12px;
     height: max-content;
-   }
+}
 
 .compassbtn {
     min-width: 30%;
@@ -89,31 +86,6 @@ a {
 .invslot {
     grid-column-start: 5;
     grid-column-end: 7;
-}
-
-#innervoice {
-    background-color: hotpink;
-    height: max-content;
-    color: #000;
-    z-index: 1001;
-}
-
-#checkin{
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-#lecture{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-size: cover;
 }
 
 .fadefromblack {
@@ -133,7 +105,33 @@ a {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
+}
+
+#innervoice {
+    background-color: hotpink;
+    height: max-content;
+    color: #000;
+    z-index: 1001;
+}
+
+#checkin {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#lecture {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
 }

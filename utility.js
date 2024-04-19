@@ -6,6 +6,7 @@ document.addEventListener("mousedown", function(event){
     mouseDown = true;
 });
 
+//up
 document.addEventListener("mouseup", function(event){
     mouseDown = false;
 });
@@ -17,10 +18,9 @@ document.addEventListener("mousemove", function(event) {
     }
 });
 
-//When mouseDown is true stop text being selected when the mouse is moved
+//Stop default selection behaviour when double click
 document.addEventListener("dblclick", function(event) {
-    if ((mouseDown)||(event.detail===2)) {  //true
+    if (event.detail===2) {  //true
         event.preventDefault();
     }
 });
-
