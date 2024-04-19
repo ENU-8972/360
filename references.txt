@@ -2,3 +2,19 @@ References
 
 Stop text being highlighted when mouse down
 https://stackoverflow.com/questions/5429827/how-can-i-prevent-text-element-selection-with-cursor-drag#:~:text=You'll%20need%20to%20call,the%20browser%20from%20selecting%20text.&text=window%20is%20the%20outermost%20scope,is%20a%20property%20of%20window%20.
+
+Fullscreen mode
+https://www.educative.io/answers/how-to-enable-full-screen-in-javascript
+
+Auktoplay video and sound
+https://stackoverflow.com/questions/65405988/autoplay-video-with-sound
+
+JavaScript SWITCH statement
+https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript
+
+CurrentURLpage
+https://www.freecodecamp.org/news/how-to-get-the-current-url-with-javascript/
+https://befused.com/javascript/get-filename-url/
+
+aHREF link call button
+https://www.shecodes.io/athena/17038-how-to-add-a-link-to-my-button-in-html
