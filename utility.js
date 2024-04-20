@@ -35,8 +35,12 @@ document.addEventListener("DOMContentLoaded", function() {
         if (video.paused) {
                 //Show the checkin accept box;
                 //When the button is clicked start the video;
-                alert('Video not playing')
-        } else { //all good };
+                alert('No play');
+                document.getElementById('videoplay').style.display = 'none';
+                document.getElementById('info').style.display = 'block';
+        } else { //all good
+            alert('play');
+            document.getElementById('info').style.display = 'none';
         }
     }, 1000);
 });

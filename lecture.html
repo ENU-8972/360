@@ -5,10 +5,13 @@
     <link rel="stylesheet" href="360style.css">
 </head>
 <body>
-    <video id="lecture" autoplay="autoplay">
-        <source src="video/lecture_blur.mp4" type="video/mp4">
-        If you see this your browser does not support the video tag.  You will miss your deadLINE.
-    </video>
+    <div class="info" style="display: none;">Play video</div>
+    <div class="videoplay" style="display: block;">
+        <video id="lecture" autoplay="autoplay">
+            <source src="video/lecture_blur.mp4" type="video/mp4">
+            If you see this your browser does not support the video tag.  You will miss your deadLINE.
+        </video>
+    </div>    
     <script type="text/javascript">
         document.getElementById("lecture").addEventListener("ended", endHandler, false);
         function endHandler(e) {
