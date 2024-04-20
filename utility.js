@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
             alert('play');
             document.getElementById('info').style.display = 'none';
         }
-    }, 1000);
+    }, 2000);
 });
 
 //Show and hide menu options
