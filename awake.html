@@ -11,8 +11,9 @@
         //if (isFullScreen === 1) {
         //    document.documentElement.requestFullscreen();
         //}
-        //var
-        document.getElementById("infobox").innerHTML = localStorage.getItem("lastthought");
+        var lastthing = localStorage.getItem("lastthought");
+        alert(lastthing);
+        document.getElementById("infobox").innerHTML = lastthing;
         localStorage.setItem("lastthought", "");
     </script>
   </head>
