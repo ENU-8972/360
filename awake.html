@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="360style.css">
     <script>
         //Check localstorage before the DOMContent has loaded and make changes to content
-        var isFullScreen = localStorage.getItem('fullscreen');
-        if (isFullScreen === 1) {
-            document.documentElement.requestFullscreen();
-        }
-
-        var
+        //var isFullScreen = localStorage.getItem('fullscreen');
+        //if (isFullScreen === 1) {
+        //    document.documentElement.requestFullscreen();
+        //}
+        //var
+        document.getElementById("infobox").innerHTML = localStorage.getItem("lastthought");
+        localStorage.setItem("lastthought", "");
     </script>
   </head>
   <body>
@@ -27,7 +28,7 @@
                     <h3>Hamburger</h3>
                 </div>
                 <div class="content">
-                    <div class="info">Information goes here</div>
+                    <div id="infobox" class="info">Information goes here</div>
                     <div><p id="innervoice"></p></div>
                 </div>
                 <div class="base">
