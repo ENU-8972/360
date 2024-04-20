@@ -1,0 +1,26 @@
+{
+  "state":"dark"
+, "gametime":"13:10"
+, "inventory":{"slot1":"empty", "slot2":"empty","slot3":"empty"}
+, "lastthought":"empty"
+, "location":{"lectureUp.html":{  "name":"Lecture Seats"
+                                , "description":"Everyone has gone, your laptop has gone, silence.  Why did they leave me?  Standing in the semi dark, the main lights off, it is hard to see properly but the stairs to your <a class='activateBtn' data-target='E' href='#'>east</a> go <a class='activateBtn' data-target='UP' href='#'>up</a> and <a class='activateBtn' data-target='DOWN' href='#'>down</a>.  There are dark rows of seating all around and the side lighting makes everything look eerie, especially the massive air conditioning ducts above your head."
+                                , "visited":0
+                                , "locationstate":"dark"
+                                , "searched":0
+                                , "searchdesc":"Tucked between two seats you find a tub of chewing <a class='item' data-id='gum'>gum</a>."
+                                , "items":["<a class='item' data-id='gum'>gum</a>"]
+                                , "NW":""
+                                , "N":""
+                                , "NE":""
+                                , "W":""
+                                , "E":"stairs7.html"
+                                , "SW":""
+                                , "S":""
+                                , "UP":"stairs11.html"
+                                , "DOWN":"stairs3.html"
+                                }
+                }
+
+
+}
