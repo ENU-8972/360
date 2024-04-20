@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <link rel="stylesheet" href="360style.css">
+    <script>
+        //Check localstorage before the DOMContent has loaded and make changes to content
+        var isFullScreen = localStorage.getItem('fullscreen');
+        if (isFullScreen === 1) {
+            document.documentElement.requestFullscreen();
+        }
+
+        var
+    </script>
   </head>
   <body>
     <audio id="awakening" src="audio/awakening.mp3" type="audio/mp3" autoplay="autoplay"></audio>

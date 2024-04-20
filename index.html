@@ -3,6 +3,25 @@
   <head>
     <title>deadLINE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--
+  "gametime":"13:10"
+, "fullscreen":0
+, "inventory":{"slot1":"empty", "slot2":"empty","slot3":"empty"}
+, "lastthought":"empty"
+, "location":   {"lectureUp.html":  {     "visited":0
+                                        , "searched":0
+                                        , "items":["<a class='item' data-id='gum'>gum</a>"]
+                                    }
+}                                    
+    -->
+    <script>
+        localStorage.Clear();
+        //Set localStorage from JSON start position file
+        document.documentElement.requestFullscreen();
+        localStorage.setItem('fullscreen', 1);
+
+    </script>
     <style>
         body, html{
             background-color:#000;

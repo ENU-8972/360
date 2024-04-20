@@ -1,5 +1,6 @@
 {
   "gametime":"13:10"
+, "fullscreen":0
 , "inventory":{"slot1":"empty", "slot2":"empty","slot3":"empty"}
 , "lastthought":"empty"
 , "location":   {"lectureUp.html":  {     "visited":0
