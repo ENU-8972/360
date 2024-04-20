@@ -27,6 +27,20 @@ document.addEventListener("dblclick", function(event) {
     }
 });
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    //Auto play check to see if it is running
+    const video = document.getElementById('lecture');
+    setTimeout(() => {
+        if (video.paused) {
+                //Show the checkin accept box;
+                //When the button is clicked start the video;
+                alert('Video not playing')
+        } else { //all good };
+        }
+    }, 1000);
+});
+
 //Show and hide menu options
 
 //Hide main description and leave only the location title
