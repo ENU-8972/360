@@ -32,6 +32,11 @@ a {
     z-index: 1000;
 }
 
+.info {
+    position: relative;
+    z-index: 9999;
+}
+
 .descriptive {
     flex: 0 1 auto;
     z-index: 1000;
