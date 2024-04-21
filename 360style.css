@@ -154,9 +154,16 @@ a {
 
 
 #innervoice {
-    background-color: hotpink;
     height: max-content;
-    color: #000;
+    color: #000;   
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
     z-index: 1001;
 }
 

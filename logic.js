@@ -12,58 +12,60 @@ function handleButtonClick(buttonId) {
     var urls = window.location.href;
     const tURL = urls.substring(urls.lastIndexOf('/')+1);
 
-    let nonav;
-    let innerv;
+    let navigate = false;
+    let innerv = "";
+    let feedback;
     let newURL;
     switch(tURL) {
         case "awake.html":
             switch(buttonId) {
                 case "UP":
-                    nonav = false;
+                    navigate = true;
                     newURL = "lectureUp.html";
-                    break;
-                    
-                case "DOWN":
-                    nonav = false;
-                    newURL = "index.html";
                     break;
 
                 default:
-                    alert("default");
-                    innerv = "Not going to happen";
-                    break;
+                    innerv = noperesponse();
             }
             break;
-     /*       
-                if (buttonId === "UP") {
-                
-            }            
-            if (buttonId === "DOWN") {
-                nonav = false;
-                newURL = "index.html";
-            } else {
-                innerv = "Really!";
-                alert(innerv);
-            }
-       */ 
+ 
         case "lectureUp":
-            if (buttonId === "NW") {
-                innerv = "Not going to happen";
+            switch(buttonId) {
+                case "UP":
+                    navigate = true;
+                    newURL = "stairs11.html";
+                    break;
+
+                case "DOWN":
+                    navigate = true;
+                    newURL = "stairs3.html";
+                    break; 
+
+                case "E":
+                    navigate = true;
+                    newURL = "stairs7.html";
+                    break;
+
+                default:
+                    innerv = noperesponse();
             }
             break;
+
+        default:
+            innerv = noperesponse();
     }
     
-    if (innerv === ""){
+    if (innerv !== "") {
         document.getElementById("innervoice").innerHTML = innerv;
     }
 
-    if (nonav === false) {
+    if (navigate === true) {
+        alert(newURL);
         //Load the URL just calculated
         window.location.href = newURL;
     }
-    
+ 
 };
-
 
 function activateButtonClick(event) {
     event.preventDefault(); // Don't do default behavior - to stop the URL getting the # added
@@ -80,35 +82,116 @@ function activateButtonClick(event) {
     } else {
       alert("I have no way of doing that");
     }
-  }
+};
 
+function noperesponse() {
+    //Return a string response based random between 1-20, to increase variety in the response
+    var response;
+    var rnum = Math.floor(Math.random() *20) + 1;
+
+    switch(rnum) {
+        case 1:
+            response = "I have no way of doing that.";
+            break;
+
+        case 2:
+            response = "Nope, I can't do that."
+            break;
+
+        case 3:
+            response = "Well that a'int happening."
+            break;
+
+        case 4:
+            response = "Not going to work."
+            break;
+
+        case 5:
+            response = "I need to try something different."
+            break;
+
+        case 6:
+            response = "That's not possible."
+            break;
+
+        case 7:
+            response = "I need to try something else."
+            break;
+
+        case 8:
+            response = "Perhaps a differnet way."
+            break;
+
+        case 9:
+            response = "I'd like to but can't."
+            break;
+
+        case 10:
+            response = "I would've thought that would work."
+            break;
+
+        case 11:
+            response = "It's not possible."
+            break;
+
+        case 12:           
+            response = "If only, how frustraiting."
+            break;
+
+        case 13:
+            response = "Apparently I can't."
+            break;
+
+        case 14:
+            response = "Another day, perhaps."
+            break;
+
+        case 15:
+            response = "And for my next trick."
+            break;
+
+        case 16:
+            response = "Alas, it seems not."
+            break;
+
+        case 17:
+            response = "Not to be."
+            break;
+
+        case 18:
+            response = "One day something is going to work."
+            break;
+
+        case 19:
+            response = "Really, I thought that might work."
+            break;
+
+        case 20:
+            response = "Try something different."
+            break;
+        
+        default:
+            response = "Ok, back to the drawing board."
+            break;
+    }
+
+    return response;
+}
 
 document.addEventListener("DOMContentLoaded", function() {
     var activateButton = document.querySelectorAll('.activateBtn');
     activateButton.forEach(function(link){
         link.addEventListener("click", activateButtonClick);
     });
-})
+});
 
-
-document.getElementById("UP").addEventListener("click", function() { 
-    handleButtonClick("UP")
+//Listeners for compass navigation button clicks
+document.getElementById("UP").addEventListener("click", function() {
+    handleButtonClick("UP");
 });
 
 document.getElementById("DOWN").addEventListener("click", function() {
     handleButtonClick("DOWN");
-});
-
-document.getElementById("SEARCH").addEventListener("click", function() {
-    handleButtonClick("SEARCH");
-});
-
-document.getElementById("BACK").addEventListener("click", function() {
-    window.history.back();
-});
-
-document.getElementById("INV").addEventListener("click", function() {
-    handleButtonClick("INV");
 });
 
 document.getElementById("NW").addEventListener("click", function() {
@@ -141,4 +224,12 @@ document.getElementById("S").addEventListener("click", function() {
 
 document.getElementById("SE").addEventListener("click", function() {
     handleButtonClick("SE");
+});
+
+document.getElementById("LOOK").addEventListener("click", function() {
+    handleButtonClick("LOOK");
+});
+
+document.getElementById("USE").addEventListener("click", function() {
+    handleButtonClick("USE");
 });
