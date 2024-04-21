@@ -97,3 +97,10 @@ document.addEventListener("DOMContentLoaded", function() {
         //update the screen with the new time
     };
 */
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var scrWidth = window.innerWidth;
+    var scrHeight = window.innerHeight;
+    alert('h:' + scrHeight + ' w:' + scrWidth );
+});
