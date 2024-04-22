@@ -92,6 +92,12 @@ a {
     object-fit: cover;
 }
 
+@media screen and (max-width: 990px) {
+    .infoimage {
+        top: 20%;
+    }
+}
+
 
 @keyframes blackin {
     from {
