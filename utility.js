@@ -87,12 +87,6 @@ if (e) {
     e.addEventListener("click", toggleVideoCheckin);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    var scrWidth = window.innerWidth;
-    var scrHeight = window.innerHeight;
-    alert('h:' + scrHeight + ' w:' + scrWidth );
-});
-
     
 //Show and hide menu options
 
@@ -140,3 +134,10 @@ document.addEventListener("DOMContentLoaded", function() {
         //update the screen with the new time
     };
 */
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var scrWidth = window.innerWidth;
+    var scrHeight = window.innerHeight;
+    alert('h:' + scrHeight + ' w:' + scrWidth );
+});

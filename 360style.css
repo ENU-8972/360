@@ -19,6 +19,7 @@ a {
     background-color: #ffffff;
     margin: 6px 0;
     border-radius: 15;
+    border: 10%;
 }
 
 .fadefromblack {
@@ -115,34 +116,54 @@ a {
     z-index: 90;
 }
 
-.ui {
+.flex-container {
     display: flex;
-    flex-direction: column;
-    flex-flow: column;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.flex-container {
+    justify-content: space-between;
 }
 
 .flexb {
     display: flex;
-    /*flex-direction: column;*/
+    flex-direction: column;
     /*flex-wrap: wrap;*/
-    flex-flow: row wrap;
+    flex-flow: column;
     min-height: 95vh;
     z-index: 1000;
 }
 
+.flexinner {
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    flex-flow: column;
+}
+
 .header {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
     background: rgba(30, 30, 30, 0.45);
-    width: 100%
+    width: 100%;
     justify-content: space-between;
+    height: 5%;
+    min-height: fit-content;
+}
+
+.header > div {
+    width: 100%;
+    background-color: DodgerBlue;
 }
 
 .time {
     text-align: left;
-    margin-top: 6px 0;
-    margin-left: 6px 0;
-    padding: 5%;
     background-color: #ffffff;
     justify-content: left;
+    font-size:30px;
+    height: inherit;
 }
 
 .menu {
@@ -155,6 +176,7 @@ a {
     text-align: right;
     z-index: 1000;
     justify-content: right;
+    height: inherit;
 }
 
 .content {
@@ -261,6 +283,10 @@ footer {
 .invslot {
     grid-column-start: 5;
     grid-column-end: 7;
+}
+
+.innervoice {
+    width: fit-content;
 }
 
 

@@ -12,18 +12,22 @@
     <three60>
         <a-scene xr-mode-ui="enabled: false">
             <a-sky src="./images/awakecarpet.jpg" rotation="0 -90 0"></a-sky>
-            <ui class="ui">
-                <div class="flexb">
-                    <header class="header">
-                        <div class="time">13:10</div>
-                        <div class="menu">        
-                            <div class="barburger">
-                                <div class="bar1"></div>
-                                <div class="bar2"></div>
-                                <div class="bar3"></div>
-                            </div>
-                        </div>
-                    </header>
+            <header id="header" class="header">
+                <div class="time">13:10</div>
+                <div class="menu">        
+                    <div class="barburger">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+            </header>            
+            <div id="ui" class="flex-container">
+                <div class="flexinner">
+                    <div id="innerv1" class="innervoice">Inner Voice 1</div>
+                    <div id="innerv2" class="innervoice">Inner Voice 2</div>
+                    <div id="innerv3" class="innervoice">Inner Voice 3</div>
+                </div>
                     <div class="content">
                         <div id="infobox" class="info">lastthing</div>
                         <div><p id="innervoice"></p></div>
@@ -35,10 +39,10 @@
                         <div class="descriptive" id="description">
                             Opening your eyes you find yourself lying on the floor of the dimly lit lecture theatre.  
                             You have no idea what time it is or how long you have remaining to submit your coursework. 
-                            Go back to <a href='index.html'>sleep</a> or get <a class='activateBtn' data-target='UP' href='#''>up</a>
+                            Go back to <a href='index.html'>sleep</a> or get <a class='activateBtn' data-target='UP' href='#'>up</a>
                         </div>
                     </div>                
-                </div>
+                <!--</div>-->
                 <!--<div class="base">
                     <div class="grid-compass">
                         
