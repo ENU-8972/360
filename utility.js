@@ -1,10 +1,13 @@
 //UI utility
 
+
 document.addEventListener("DOMContentLoaded", function() {
     //Get all the localStorage settings and apply the to the html
     localStorage.setItem("lastthought", "Nooooooooo");
     document.getElementById("infobox").innerHTML = localStorage.getItem("lastthought");
-})
+});
+
+
 
 //Stop mouse down scrolling from selecting text when moving the a-frame
 var mouseDown = false;
@@ -26,12 +29,15 @@ document.addEventListener("mousemove", function(event) {
     }
 });
 
+
 //Stop default selection behaviour when double click
 document.addEventListener("dblclick", function(event) {
     if (event.detail===2) {
         event.preventDefault();
     }
 });
+
+
 
 /*  Auto play no worky for me
 document.addEventListener("DOMContentLoaded", function() {
@@ -50,7 +56,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }, 2000);
 });
-*/ 
+*/
+
+
 
 function toggleVideoCheckin () {
     //Function that replaces autoplay for the video
@@ -70,9 +78,25 @@ function toggleVideoCheckin () {
     vidplaydiv.style.zIndex = 9999;
 
     video.play();
+};
+
+
+
+document.getElementById("LOOK").addEventListener("click", function() {
+    handleButtonClick("LOOK");
+});
+
+var e = document.getElementById("yescode");
+if (e) {
+    e.addEventListener("click", toggleVideoCheckin);
 }
 
-document.getElementById("yescode").addEventListener("click", toggleVideoCheckin);
+document.addEventListener("DOMContentLoaded", function() {
+    var scrWidth = window.innerWidth;
+    var scrHeight = window.innerHeight;
+    alert('h:' + scrHeight + ' w:' + scrWidth );
+});
+
     
 //Show and hide menu options
 
@@ -120,10 +144,3 @@ document.addEventListener("DOMContentLoaded", function() {
         //update the screen with the new time
     };
 */
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    var scrWidth = window.innerWidth;
-    var scrHeight = window.innerHeight;
-    alert('h:' + scrHeight + ' w:' + scrWidth );
-});
