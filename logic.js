@@ -51,6 +51,73 @@ function handleButtonClick(buttonId) {
             }
             break;
 
+            case "stairs3":
+                switch(buttonId) {
+                    case "UP":
+                        navigate = true;
+                        newURL = "stairs7.html";
+                        break;
+    
+                    case "DOWN":
+                        navigate = true;
+                        newURL = "lecturestage.html";
+                        break; 
+    
+                    case "NW":
+                        navigate = true;
+                        newURL = "main_door.html";
+                        break;
+
+                    case "NE":
+                            navigate = false;
+                            newURL = "lecturn.html";
+                            break;                        
+    
+                    default:
+                        innerv = noperesponse();
+                }
+                break;
+
+                case "stairs7":
+                    switch(buttonId) {
+                        case "UP":
+                            navigate = true;
+                            newURL = "stairs11.html";
+                            break;
+        
+                        case "DOWN":
+                            navigate = true;
+                            newURL = "stairs3.html";
+                            break;                     
+        
+                        default:
+                            innerv = noperesponse();
+                    }
+                    break;                
+
+                case "stairs11":
+                    switch(buttonId) {
+                        case "UP":
+                            navigate = true;
+                            newURL = "landing.html";
+                            break;
+        
+                        case "DOWN":
+                            navigate = true;
+                            newURL = "stairs7.html";
+                            break;
+        
+                        case "LOOK":
+                                //Piece of paper
+                                navigate = false;
+                                newURL = "lecturn.html";
+                                break;                             
+        
+                        default:
+                            innerv = noperesponse();
+                    }
+                    break; 
+
         default:
             innerv = noperesponse();
     }

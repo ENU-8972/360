@@ -95,7 +95,7 @@ a {
 
 @media screen and (max-width: 990px) {
     .infoimage {
-        background-position: 50dvh;
+        background-position: 150dvh;
     }
 }
 
@@ -113,6 +113,12 @@ a {
 
 .videoplay {
     z-index: 90;
+}
+
+.ui {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
 }
 
 .flexb {
@@ -174,6 +180,17 @@ a {
     flex: 0 1 auto;
     display: flex;
     justify-content: space-between;
+    min-height: max-content;
+    z-index: 1000;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 1%;
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: max-content;
     z-index: 1000;
 }
 

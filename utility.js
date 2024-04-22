@@ -121,10 +121,9 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 */
 
-/*
+
 document.addEventListener("DOMContentLoaded", function() {
     var scrWidth = window.innerWidth;
     var scrHeight = window.innerHeight;
     alert('h:' + scrHeight + ' w:' + scrWidth );
 });
-*/
