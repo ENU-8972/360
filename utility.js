@@ -81,11 +81,6 @@ function toggleVideoCheckin () {
 };
 
 
-
-document.getElementById("LOOK").addEventListener("click", function() {
-    handleButtonClick("LOOK");
-});
-
 var e = document.getElementById("yescode");
 if (e) {
     e.addEventListener("click", toggleVideoCheckin);

@@ -253,50 +253,86 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //Listeners for compass navigation button clicks
-document.getElementById("UP").addEventListener("click", function() {
+var e = document.getElementById("UP")
+if (e) {
+    e.addEventListener("click", function() {
     handleButtonClick("UP");
-});
+    });
+}
 
-document.getElementById("DOWN").addEventListener("click", function() {
+var e = document.getElementById("DOWN")
+if (e) {
+    e.addEventListener("click", function() {
     handleButtonClick("DOWN");
-});
+    });
+}
 
-document.getElementById("NW").addEventListener("click", function() {
+var e = document.getElementById("NW")
+if (e) {
+    e.addEventListener("click", function() {
     handleButtonClick("NW");
-});
+    });
+}
 
-document.getElementById("N").addEventListener("click", function() {
+var e = document.getElementById("N")
+if (e) {
+    e.addEventListener("click", function() {
     handleButtonClick("N");
-});
+    });
+}
 
-document.getElementById("NE").addEventListener("click", function() {
+var e = document.getElementById("NE")
+if (e) {
+    e.addEventListener("click", function() {
     handleButtonClick("NE");
-});
+    });
+}
 
-document.getElementById("W").addEventListener("click", function() {
+var e = document.getElementById("W")
+if (e) {
+    e.addEventListener("click", function() {
     handleButtonClick("W");
-});
+    });
+}
 
-document.getElementById("E").addEventListener("click", function() {
+var e = document.getElementById("E")
+if (e) {
+    e.addEventListener("click", function() {
     handleButtonClick("E");
-});
+    });
+}
 
-document.getElementById("SW").addEventListener("click", function() {
+var e = document.getElementById("SW")
+if (e) {
+    e.addEventListener("click", function() {
     handleButtonClick("SW");
-});
+    });
+}
 
-document.getElementById("S").addEventListener("click", function() {
+var e = document.getElementById("S")
+if (e) {
+    e.addEventListener("click", function() {
     handleButtonClick("S");
-});
+    });
+}
 
-document.getElementById("SE").addEventListener("click", function() {
+var e = document.getElementById("SE")
+if (e) {
+    e.addEventListener("click", function() {
     handleButtonClick("SE");
-});
+    });
+}
 
-document.getElementById("LOOK").addEventListener("click", function() {
+var e = document.getElementById("LOOK")
+if (e) {
+    e.addEventListener("click", function() {
     handleButtonClick("LOOK");
-});
+    });
+}
 
-document.getElementById("USE").addEventListener("click", function() {
+var e = document.getElementById("USE")
+if (e) {
+    e.addEventListener("click", function() {
     handleButtonClick("USE");
-});
+    });
+}
