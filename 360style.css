@@ -84,7 +84,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
-    background-position: 15dvh;
+    
 }
 
 .infoimage img {
@@ -95,7 +95,7 @@ a {
 
 @media screen and (max-width: 990px) {
     .infoimage {
-        top: 20%;
+        background-position: 50dvh;
     }
 }
 
