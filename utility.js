@@ -33,7 +33,7 @@ document.addEventListener("dblclick", function(event) {
     }
 });
 
-
+/*  Auto play no worky for me
 document.addEventListener("DOMContentLoaded", function() {
     //Auto play check to see if it is running
     const video = document.getElementById('lecture');
@@ -50,7 +50,30 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }, 2000);
 });
+*/ 
 
+function toggleVideoCheckin () {
+    //Function that replaces autoplay for the video
+    //This will now require a user to click "check in" which 
+    //will then hide the checkin div and show and start the video div
+    var checkindiv = document.getElementById("yescode");
+    var vidplaydiv = document.getElementById("vidplay");
+    var modalishdiv = document.getElementById("modalkinda");
+
+    const video = document.getElementById('lecture');
+
+    modalishdiv.style.display = "none";
+    modalishdiv.style.zIndex = 0;
+    checkindiv.style.display = "none";
+    checkindiv.style.zIndex = 0;
+    vidplaydiv.style.display = "block";
+    vidplaydiv.style.zIndex = 9999;
+
+    video.play();
+}
+
+document.getElementById("yescode").addEventListener("click", toggleVideoCheckin);
+    
 //Show and hide menu options
 
 //Hide main description and leave only the location title
@@ -98,8 +121,10 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 */
 
+/*
 document.addEventListener("DOMContentLoaded", function() {
     var scrWidth = window.innerWidth;
     var scrHeight = window.innerHeight;
     alert('h:' + scrHeight + ' w:' + scrWidth );
 });
+*/

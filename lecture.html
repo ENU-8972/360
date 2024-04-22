@@ -5,11 +5,14 @@
     <link rel="stylesheet" href="360style.css">
 </head>
 <body>
-    <!--<div class="info" style="display: none;">Play video</div>
-    <div class="videoplay" style="display: block;">-->
-    <div id="inf" class="info" style="display: none">Play video</div>
+
+    <div id="modalkinda" class="modalish"></div>
+    <div id="yescode" class="infoimage">
+        <img src="./images/CheckInWebTechYesCode.png" alt="Student check in screen code entered">
+    </div>
+
     <div id="vidplay" class="videoplay">
-        <video id="lecture" autoplay="autoplay">
+        <video id="lecture" preload="metadata">
             <source src="video/lecture_blur.mp4" type="video/mp4">
             If you see this your browser does not support the video tag.  You will miss your deadLINE.
         </video>
@@ -18,26 +21,10 @@
         const thisvideo = document.getElementById('lecture');
         thisvideo.addEventListener("ended", endHandler, false);
 
-        //Check if th evideo has ended
-        //document.getElementById("lecture").addEventListener("ended", endHandler, false);
+        //Check if the video has ended
         function endHandler(e) {
             window.location.href="awake.html";
         }
-
-        //Auto play check to see if it is running
-        setTimeout(() => {
-        if (thisvideo.paused) {
-            //Show the checkin accept box;
-            //When the button is clicked start the video;
-            alert('No play');
-            document.getElementById("vidplay").style.display: n;
-            document.getElementById("inf").style.display = "block";
-        } else { //all good
-            //alert('play');
-            document.getElementById('info').style.display = "none";
-        }
-    }, 2000);
-
     </script>
     <script src="utility.js"></script>
 </body>
