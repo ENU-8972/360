@@ -8,6 +8,19 @@ a {
     text-decoration-line: none;
 }
 
+.barburger {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    border-radius: 15;
+}
+
 .fadefromblack {
     position: fixed;
     top: 0;
@@ -44,6 +57,42 @@ a {
     pointer-events: none;
 }
 
+.modalish {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,1);
+    opacity: 0.75;
+    z-index: 9900;
+    pointer-events: none;
+}    
+
+.infoimage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: max-content;
+    border: 1px black;
+    overflow: hidden;
+    z-index: 9910;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+
+.infoimage img {
+    max-width: 100%;
+    max-inline-size: 100%;
+    object-fit: cover;
+}
+
+
 @keyframes blackin {
     from {
         opacity: 1;
@@ -62,9 +111,24 @@ a {
 .flexb {
     display: flex;
     /*flex-direction: column;*/
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    flex-flow: row wrap;
     min-height: 95vh;
     z-index: 1000;
+}
+
+.header {
+    background: rgba(30, 30, 30, 0.45);
+    justify-content: space-between;
+}
+
+.time {
+    text-align: left;
+    margin-top: 6px 0;
+    margin-left: 6px 0;
+    padding: 5%;
+    background-color: #ffffff;
+    justify-content: left;
 }
 
 .menu {
@@ -73,16 +137,16 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(30, 30, 30, 0.45);
     padding: 5px;
     text-align: right;
     z-index: 1000;
+    justify-content: right;
 }
 
 .content {
     flex: 1 1 auto;
     position: relative;
-    min-height: 85%;
+    min-height: auto;
 }
 
 .info {
@@ -99,6 +163,7 @@ a {
 
 .base {
     margin-top: auto;
+    margin-bottom: 1%;
     flex: 0 1 auto;
     display: flex;
     justify-content: space-between;
@@ -253,3 +318,4 @@ a {
     z-index: -1;
     background-size: cover;
 }
+

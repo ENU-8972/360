@@ -3,7 +3,7 @@
   <head>
     <title>deadLINE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="360style.css">
     <!--
   "gametime":"13:10"
 , "fullscreen":0
@@ -32,7 +32,7 @@
         } 
 
         .backimg{
-            background-image: url("./images/CheckIn.png");
+            background-image: url("./images/MyUniBackgroundBlur.png");
             height: 100%; 
             background-position: center;
             background-size: cover;   
@@ -41,7 +41,12 @@
     </style>
   </head>
   <body>
-    <div class="backimg" onclick="location.href='lecture.html';" style="cursor: pointer;">
-    </div>   
+    <div class="modalish"></div>
+    <div class="backimg">
+        <div id="lectures" class="infoimage" onclick="location.href='lecture.html'">
+            <img src="./images/CheckIn20240426.png" alt="Student check in screen">
+        </div>
+    </div>
+  <script src="utility.js"></script>    
   </body>
 </html>

@@ -28,7 +28,7 @@ document.addEventListener("mousemove", function(event) {
 
 //Stop default selection behaviour when double click
 document.addEventListener("dblclick", function(event) {
-    if (event.detail===2) {  //true
+    if (event.detail===2) {
         event.preventDefault();
     }
 });
@@ -98,9 +98,10 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 */
 
-
+/*
 document.addEventListener("DOMContentLoaded", function() {
     var scrWidth = window.innerWidth;
     var scrHeight = window.innerHeight;
     alert('h:' + scrHeight + ' w:' + scrWidth );
 });
+*/
