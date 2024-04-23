@@ -75,7 +75,7 @@ function handleButtonClick(buttonId) {
                         break;
 
                     case "NE":
-                        navigate = false;
+                        navigate = true;
                         newURL = "lecturn.html";
                         break;                        
     
@@ -247,14 +247,17 @@ function handleButtonClick(buttonId) {
     }
     
     if (innerv1 !== "") {
+        localStorage.set("innervoice1", innerv1);
         document.getElementById("innerv1").innerHTML = innerv1;
     }
 
     if (innerv2 !== "") {
+        localStorage.set("innervoice2", innerv2);
         document.getElementById("innerv2").innerHTML = innerv2;
     }
 
     if (innerv3 !== "") {
+        localStorage.set("innervoice3", innerv3);
         document.getElementById("innerv3").innerHTML = innerv3;
     }
         
