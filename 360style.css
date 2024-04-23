@@ -137,10 +137,13 @@ a {
 
 .flexinner {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     /*flex-wrap: wrap;*/
     flex-flow: column;
+    justify-content: space-between;
+    height: auto;
 }
+
 
 .header {
     display: flex;
@@ -183,6 +186,8 @@ a {
     flex: 1 1 auto;
     position: relative;
     min-height: auto;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .info {
@@ -213,8 +218,9 @@ footer {
     flex: 0 1 auto;
     display: flex;
     justify-content: space-between;
-    min-height: max-content;
+    min-height: min-content;
     z-index: 1000;
+    height: fit-content;
 }
 
 /*
@@ -269,6 +275,8 @@ footer {
     border-radius: 15px;
     padding: 1%;
     width: fit-content;
+    justify-content: last baseline;
+    height: fit-content;
 }
 
 .inventory {
@@ -287,6 +295,8 @@ footer {
 
 .innervoice {
     width: fit-content;
+    height: 15%;
+    padding: 10px;
 }
 
 
@@ -337,7 +347,7 @@ footer {
     }
 }
 
-
+/*
 #innervoice {
     height: max-content;
     color: #000;   
@@ -351,6 +361,7 @@ footer {
     text-align: center;
     z-index: 1001;
 }
+*/
 
 #checkin {
     background-repeat: no-repeat;
@@ -368,5 +379,10 @@ footer {
     height: 100%;
     z-index: -1;
     background-size: cover;
+}
+
+#infospace {
+    min-height: 75%;
+    max-height: 100%;
 }
 
