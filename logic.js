@@ -306,6 +306,11 @@ function handleButtonClick(buttonId) {
                             navigate = true;
                             newURL = "duct.html";
                             break;                            
+                        
+                        case "N":
+                            navigate = true;
+                            newURL = "awake.html";
+                            break;                                
                             
                         case "S":
                             navigate = true;
@@ -351,7 +356,7 @@ function handleButtonClick(buttonId) {
                     case "maze_d.html":
                     switch(buttonId) {
 
-                        case "S":
+                        case "DOWN":
                             navigate = true;
                             newURL = "maze_p.html";
                             break;                            
