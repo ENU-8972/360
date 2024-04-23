@@ -236,32 +236,34 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(3, auto);
-    grid-gap: 3px;
-    background-color: rgb(128, 125, 124);
+    width: 20vw;
+    grid-gap: 5px;
+    background: rgba(30, 30, 30, 0.45);
     padding: 10px;
     border-radius: 15px;
-   /* margin: 1%;
+    min-width: 20vw;
+    /*
     min-width: fit-content;
     min-height: fit-content;
-    height: max-content;
-    /*max-width: 25%;*/
+    */
 }
 
 /*
-.grid-compass > div {
+.grid-compass > button {
+    width: auto;
+    height: auto;
     background-color: rgba(163, 167, 167);
     text-align: center;
     color: rgba(243, 243, 243, 0.8);
     font-size: 12px;
     height: max-content;
 }
-*/
+*/  
+
 .compassbtn {
-   /* min-width: 30%;
+    justify-content: center;
+    align-items: center;
     margin: 2%;
-    height: 95%;
-    
-    */
     border: 1px;
     padding: 10px;
     border-radius: 5px;
@@ -272,12 +274,13 @@ footer {
     z-index: 1000;
     color: rgba(243, 243, 243, 0.8);
     background: rgba(30, 30, 30, 0.45);
-    margin: 1%;
+    padding: 10px;
     border-radius: 15px;
-    padding: 1%;
-    width: fit-content;
+    width: 65vw;
     justify-content: last baseline;
     height: fit-content;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 .inventory {
@@ -286,6 +289,7 @@ footer {
     color: rgba(243, 243, 243, 0.8);
     font-size: 12px;
     height: max-content;
+    width: 15vw;
 }
 
 
@@ -387,3 +391,10 @@ footer {
     max-height: 100%;
 }
 
+#title {
+    width: 95%;
+}
+
+#description {
+    width: 95%;
+}

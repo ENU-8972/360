@@ -83,7 +83,7 @@ function toggleVideoCheckin () {
 
 var e = document.getElementById("yescode");
 if (e) {
-    alert("yescode toggle");
+    //alert("yescode toggle");
     e.addEventListener("click", toggleVideoCheckin);
 }
 
@@ -100,7 +100,7 @@ if (e) {
 
 //
 
-
+/*
 document.addEventListener("DOMContentLoaded", function() {
     //Inventory
     let inventory = [null, null, null]; //inventory placeholders
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
 });
-
+*/
 
 /*
 //Storage
@@ -135,9 +135,10 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 */
 
-
+/*
 document.addEventListener("DOMContentLoaded", function() {
     var scrWidth = window.innerWidth;
     var scrHeight = window.innerHeight;
     alert('h:' + scrHeight + ' w:' + scrWidth );
 });
+*/

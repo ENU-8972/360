@@ -2,6 +2,7 @@
 <html class="a-fullscreen">
   <head>
     <title>deadLINE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <link rel="stylesheet" href="360style.css">
   </head>
@@ -10,26 +11,30 @@
     <three60>
         <a-scene xr-mode-ui="enabled: false">
             <a-sky src="./images/lectureUp.jpg" rotation="0 -90 0"></a-sky>
-
-            <div class="flexb">
+            <header id="header" class="header">
+                <div class="time">13:10</div>
                 <div class="menu">        
-                    <h3>Hamburger</h3>
+                    <div class="barburger" style="display: none;">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
                 </div>
+            </header> 
+            <div id="spacer_span">spacer span</div>           
+            <div id="ui" class="flex-container">
+                <div class="flexinner">
+                    <div id="innerv1" class="innervoice">Inner Voice 1</div>
+                    <div id="innerv2" class="innervoice">Inner Voice 2</div>
+                    <div id="innerv3" class="innervoice">Inner Voice 3</div>
+                </div>
+            </div>
+            <div id="infospace" class="flex-container">
                 <div class="content">
-                    <!--<div id="menu" style="position: fixed; top: 0; left:0; right: 0; background: rgba(30, 30, 30, 0.2); padding: 10px">-->
+                    <div id="infobox" class="info" style="display: none;"></div>
+                    <!--<div><p id="innervoice"></p></div>-->
                 </div>
-                <div class="descriptive" id="info">
-                    <div class="descriptive" id="title">
-                        Lecture seats
-                    </div>
-                    <div class="descriptive" id="description">
-                        Everyone has gone, your laptop has gone, silence.  Why did they leave me?  Standing in the semi dark,
-                         the main lights off, it is hard to see properly but the stairs to your <a class='activateBtn' data-target='E' href='#'>east</a> go 
-                         <a class='activateBtn' data-target='UP' href='#'>up</a> and <a class='activateBtn' data-target='DOWN' href='#'>down</a>.  There are dark rows of seating all around
-                           and the side lighting makes everything look a bit eerie, especially the massive air conditioning ducts above your head.
-                    </div>
-                </div>                
-                <div class="base">
+                <footer class="base">
                     <div class="grid-compass">
                         <!--First row-->
                         <button id="NW" class="compassbtn">NW</button>
@@ -47,11 +52,21 @@
                         <button id="SE" class="compassbtn">SE</button>
                         <button id="DOWN" class="compassbtn">DOWN</button> 
                     </div>
+                    <div class="descriptive" id="info">
+                        <div class="descriptive" id="title">
+                            Lecture Up
+                        </div>
+                        <div class="descriptive" id="description">
+                            Everyone has gone, your laptop has gone, silence.  Why did they leave me?  Standing in the semi dark,
+                         the main lights off, it is hard to see properly but the stairs to your <a class='activateBtn' data-target='E' href='#'>east</a> go 
+                         <a class='activateBtn' data-target='UP' href='#'>up</a> and <a class='activateBtn' data-target='DOWN' href='#'>down</a>.  There are dark rows of seating all around
+                           and the side lighting makes everything look a bit eerie, especially the massive air conditioning ducts above your head.
+                        </div>
+                    </div> 
                     <div class="inventory">
-                        Empty Empty Empty
                     </div>                    
-                </div>    
-            </div> 
+                </footer>
+            </div>          
         </a-scene>
     </three60> 
     <script src="logic.js"></script>

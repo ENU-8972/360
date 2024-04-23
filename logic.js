@@ -10,12 +10,15 @@ function handleButtonClick(buttonId) {
     //Check the URL and possible outcomes
     //List of each URL
     var urls = window.location.href;
-    const tURL = urls.substring(urls.lastIndexOf('/')+1);
+    alert(urls);
+    const tURL = urls.substring(urls.lastIndexOf('/')+1).replace('#', '');
 
     let navigate = false;
     let innerv = "";
     let feedback;
     let newURL;
+    alert(buttonId);
+    alert("handleButtonClick " + tURL);
     switch(tURL) {
         case "awake.html":
             switch(buttonId) {
@@ -29,7 +32,8 @@ function handleButtonClick(buttonId) {
             }
             break;
  
-        case "lectureUp":
+        case "lectureUp.html":
+            alert("switched: " + tURL);
             switch(buttonId) {
                 case "UP":
                     navigate = true;
@@ -51,7 +55,7 @@ function handleButtonClick(buttonId) {
             }
             break;
 
-            case "stairs3":
+            case "stairs3.html":
                 switch(buttonId) {
                     case "UP":
                         navigate = true;
@@ -78,7 +82,7 @@ function handleButtonClick(buttonId) {
                 }
                 break;
 
-                case "stairs7":
+                case "stairs7.html":
                     switch(buttonId) {
                         case "UP":
                             navigate = true;
@@ -127,19 +131,20 @@ function handleButtonClick(buttonId) {
     }
 
     if (navigate === true) {
-        alert(newURL);
+        //alert(newURL);
         //Load the URL just calculated
         window.location.href = newURL;
     }
  
 };
 
+
 function activateButtonClick(event) {
     event.preventDefault(); // Don't do default behavior - to stop the URL getting the # added
   
     // Get the target button ID
     var targetButtonId = event.target.getAttribute('data-target');
-  
+      
     // Find the button element by its ID
     var button = document.getElementById(targetButtonId);
   
@@ -150,6 +155,7 @@ function activateButtonClick(event) {
       alert("I have no way of doing that");
     }
 };
+
 
 function noperesponse() {
     //Return a string response based random between 1-20, to increase variety in the response
@@ -246,6 +252,7 @@ function noperesponse() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    alert("ActivateButton");
     var activateButton = document.querySelectorAll('.activateBtn');
     activateButton.forEach(function(link){
         link.addEventListener("click", activateButtonClick);
@@ -336,3 +343,4 @@ if (e) {
     handleButtonClick("USE");
     });
 }
+
