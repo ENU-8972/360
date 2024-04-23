@@ -142,6 +142,7 @@ a {
     flex-flow: column;
     justify-content: space-between;
     height: auto;
+    z-index: 1000;
 }
 
 
@@ -276,7 +277,7 @@ footer {
     background: rgba(30, 30, 30, 0.45);
     padding: 10px;
     border-radius: 15px;
-    width: 65vw;
+    width: 55vw;
     justify-content: last baseline;
     height: fit-content;
     margin-left: 5px;
@@ -302,6 +303,10 @@ footer {
     width: fit-content;
     height: 15%;
     padding: 10px;
+    background: rgba(30, 30, 30, 0.45);
+    color: rgba(243, 243, 243, 0.8);
+    margin: 10px;
+    border-radius: 15px;
 }
 
 

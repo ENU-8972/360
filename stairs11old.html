@@ -2,40 +2,24 @@
 <html class="a-fullscreen">
   <head>
     <title>deadLINE</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="logic.js"></script>
+    <script src="utility.js"></script>
     <link rel="stylesheet" href="360style.css">
   </head>
   <body>
-    <div class="blackin"></div>
     <three60>
         <a-scene xr-mode-ui="enabled: false">
             <a-sky src="./images/stairs11.jpg" rotation="0 -90 0"></a-sky>
-            <header id="header" class="header">
-                <div class="time">13:10</div>
+
+            <div class="flexb">
                 <div class="menu">        
-                    <div class="barburger" style="display: none;">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
+                    <h3>Hamburger</h3>
                 </div>
-            </header> 
-            <div id="spacer_span">spacer span</div>           
-            <div id="ui" class="flex-container">
-                <div class="flexinner">
-                    <div id="innerv1" class="innervoice"></div>
-                    <div id="innerv2" class="innervoice"></div>
-                    <div id="innerv3" class="innervoice"></div>
-                </div>
-            </div>
-            <div id="infospace" class="flex-container">
                 <div class="content">
-                    <div id="infobox" class="info" style="display: none;"></div>
-                    <!--<div><p id="innervoice"></p></div>-->
+                    <!--<div id="menu" style="position: fixed; top: 0; left:0; right: 0; background: rgba(30, 30, 30, 0.2); padding: 10px">-->
                 </div>
-                <footer class="base">
+                <div class="base">
                     <div class="grid-compass">
                         <!--First row-->
                         <button id="NW" class="compassbtn">NW</button>
@@ -55,22 +39,21 @@
                     </div>
                     <div class="descriptive" id="info">
                         <div class="descriptive" id="title">
-                            Stairs 11
+                            Lecture seats
                         </div>
                         <div class="descriptive" id="description">
                             It is dark back there and there is definately something moving in the corner.  You feel the hairs 
-                            on your arms stand on end.  On the floor there is a piece of <a class='activateBtn' data-target='LOOK' href='#'>paper</a>.
-                              If you feel very brave you could keep going <a class='activateBtn' data-target='UP' href='#'>up</a> and try and get out 
-                              of the back exit.  Or you could turn around and head back <a class='activateBtn' data-target='DOWN' href='#'>down</a> the way you came.
+                            on your arms stand on end.  On the floor there is a piece of <a href="index.html">paper</a>.
+                              If you feel very brave you could keep going <a href="landing.html">up</a> and try and get out 
+                              of the back exit.  Or you could turn around and head back <a href="stairs7.html">down</a> the way you came.
                         </div>
-                    </div> 
+                    </div>
                     <div class="inventory">
+                        Empty Empty Empty
                     </div>                    
-                </footer>
-            </div>          
+                </div>    
+            </div> 
         </a-scene>
-    </three60> 
-    <script src="logic.js"></script>
-    <script src="utility.js"></script>         
+    </three60>      
   </body>
 </html>

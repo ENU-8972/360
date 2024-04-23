@@ -2,39 +2,24 @@
 <html class="a-fullscreen">
   <head>
     <title>deadLINE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="logic.js"></script>
+    <script src="utility.js"></script>
     <link rel="stylesheet" href="360style.css">
   </head>
   <body>
-    <div class="blackin"></div>
     <three60>
         <a-scene xr-mode-ui="enabled: false">
-            <a-sky src="./images/stairs7.jpg" rotation="0 -90 0"></a-sky>
-            <header id="header" class="header">
-                <div class="time">13:10</div>
+            <a-sky src="./images/stairs3.jpg" rotation="0 -90 0"></a-sky>
+
+            <div class="flexb">
                 <div class="menu">        
-                    <div class="barburger" style="display: none;">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
+                    <h3>Hamburgericons8-hamburger-button-100.png</h3>
                 </div>
-            </header> 
-            <div id="spacer_span">spacer span</div>           
-            <div id="ui" class="flex-container">
-                <div class="flexinner">
-                    <div id="innerv1" class="innervoice"></div>
-                    <div id="innerv2" class="innervoice"></div>
-                    <div id="innerv3" class="innervoice"></div>
-                </div>
-            </div>
-            <div id="infospace" class="flex-container">
                 <div class="content">
-                    <div id="infobox" class="info" style="display: none;"></div>
-                    <!--<div><p id="innervoice"></p></div>-->
+                    <!--<div id="menu" style="position: fixed; top: 0; left:0; right: 0; background: rgba(30, 30, 30, 0.2); padding: 10px">-->
                 </div>
-                <footer class="base">
+                <div class="base">
                     <div class="grid-compass">
                         <!--First row-->
                         <button id="NW" class="compassbtn">NW</button>
@@ -54,22 +39,21 @@
                     </div>
                     <div class="descriptive" id="info">
                         <div class="descriptive" id="title">
-                            Stairs 7
+                            Lecture stairs
                         </div>
                         <div class="descriptive" id="description">
                             You are standing on the offset lecture theatre stairs.  The
-                            further you get from the side lighting the dimmer it seems.  You don't have enough light to see clearly into the rows on either side.  
-                            <a class='activateBtn' data-target='DOWN' href='#'>Down</a> seems to be best lit and would head towards the lecture floor.  
-                            <a class='activateBtn' data-target='UP' href='#'>Up</a> and to the back seems to be much darker than it should be and was that the sound of a seat flipping up?                            
+                            further you get from the side lighting the dimmer it seems.  <a href="stairs3.html">Down</a> seems to be best lit. 
+                            <a href="stairs11.html">Up</a> and to the back seems to be much darker than it should be and was that the sound of a seat flipping up?
+                            You don't have enough light to see clearly into the rows on either side.
                         </div>
-                    </div> 
+                    </div>
                     <div class="inventory">
+                        Empty Empty Empty
                     </div>                    
-                </footer>
-            </div>          
+                </div>    
+            </div> 
         </a-scene>
-    </three60> 
-    <script src="logic.js"></script>
-    <script src="utility.js"></script>         
+    </three60>      
   </body>
 </html>

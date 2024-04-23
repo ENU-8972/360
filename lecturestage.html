@@ -2,7 +2,6 @@
 <html class="a-fullscreen">
   <head>
     <title>deadLINE</title>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <link rel="stylesheet" href="360style.css">
@@ -11,7 +10,7 @@
     <div class="blackin"></div>
     <three60>
         <a-scene xr-mode-ui="enabled: false">
-            <a-sky src="./images/lectureUp.jpg" rotation="0 -90 0"></a-sky>
+            <a-sky src="./images/lecturestage.jpg" rotation="0 -90 0"></a-sky>
             <header id="header" class="header">
                 <div class="time">13:10</div>
                 <div class="menu">        
@@ -25,9 +24,9 @@
             <div id="spacer_span">spacer span</div>           
             <div id="ui" class="flex-container">
                 <div class="flexinner">
-                    <div id="innerv1" class="innervoice"></div>
-                    <div id="innerv2" class="innervoice"></div>
-                    <div id="innerv3" class="innervoice"></div>
+                    <div id="innerv1" class="innervoice"> </div>
+                    <div id="innerv2" class="innervoice"> </div>
+                    <div id="innerv3" class="innervoice"> </div>
                 </div>
             </div>
             <div id="infospace" class="flex-container">
@@ -55,13 +54,12 @@
                     </div>
                     <div class="descriptive" id="info">
                         <div class="descriptive" id="title">
-                            Lecture Up
+                            Lecture Stage
                         </div>
                         <div class="descriptive" id="description">
-                            Everyone has gone, your laptop has gone, silence.  Why did they leave me?  Standing in the semi dark,
-                         the main lights off, it is hard to see properly but the stairs to your <a class='activateBtn' data-target='E' href='#'>east</a> go 
-                         <a class='activateBtn' data-target='UP' href='#'>up</a> and <a class='activateBtn' data-target='DOWN' href='#'>down</a>.  There are dark rows of seating all around
-                           and the side lighting makes everything look a bit eerie, especially the massive air conditioning ducts above your head.
+                            You are standing on the main stage of the sizesable lecture theatre.  To your <a class='activateBtn' data-target='W' href='#'>west</a> is a door.  
+                            To your <a class='activateBtn' data-target='E' href='#'>east</a> is the lecturn, shrowded in darkness.
+                            <a class='activateBtn' data-target='N' href='#'>North</a> is a table filled with lost property.  To the <a class='activateBtn' data-target='S' href='#'>south</a> are the stairs leading to the seats.
                         </div>
                     </div> 
                     <div class="inventory">

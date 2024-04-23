@@ -2,24 +2,39 @@
 <html class="a-fullscreen">
   <head>
     <title>deadLINE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-    <script src="logic.js"></script>
-    <script src="utility.js"></script>
     <link rel="stylesheet" href="360style.css">
   </head>
   <body>
+    <div class="blackin"></div>
     <three60>
         <a-scene xr-mode-ui="enabled: false">
             <a-sky src="./images/stairs3.jpg" rotation="0 -90 0"></a-sky>
-
-            <div class="flexb">
+            <header id="header" class="header">
+                <div class="time">13:10</div>
                 <div class="menu">        
-                    <h3>Hamburgericons8-hamburger-button-100.png</h3>
+                    <div class="barburger" style="display: none;">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
                 </div>
+            </header> 
+            <div id="spacer_span">spacer span</div>           
+            <div id="ui" class="flex-container">
+                <div class="flexinner">
+                    <div id="innerv1" class="innervoice"></div>
+                    <div id="innerv2" class="innervoice"></div>
+                    <div id="innerv3" class="innervoice"></div>
+                </div>
+            </div>
+            <div id="infospace" class="flex-container">
                 <div class="content">
-                    <!--<div id="menu" style="position: fixed; top: 0; left:0; right: 0; background: rgba(30, 30, 30, 0.2); padding: 10px">-->
+                    <div id="infobox" class="info" style="display: none;"></div>
+                    <!--<div><p id="innervoice"></p></div>-->
                 </div>
-                <div class="base">
+                <footer class="base">
                     <div class="grid-compass">
                         <!--First row-->
                         <button id="NW" class="compassbtn">NW</button>
@@ -39,21 +54,22 @@
                     </div>
                     <div class="descriptive" id="info">
                         <div class="descriptive" id="title">
-                            Lecture stairs
+                            Stairs 3
                         </div>
                         <div class="descriptive" id="description">
-                            Fumbling your way from the seating you are standing on the offset lecture theatre stairs.  The
-                            further you get from the side lighting the dimmer it seems.  <a href="stairs3.html">Down</a> seems to be best lit. 
-                            <a href="stairs11.html">Up</a> and to the back seems to be much darker than it should be and was that the sound of a seat flipping up?
-                            You don't have enough light to see clearly into the rows on either side.
+                            The bottom of the stairs.  To your <a class='activateBtn' data-target='N' href='#'>north</a> is the main stage.  
+                            To the <a class='activateBtn' data-target='NW' href='#'>north west</a> you can see the main door. 
+                            In the other direction to the <a class='activateBtn' data-target='NE' href='#'>north east</a> is the lecturn.  It gets darker in that direction.
+                            From here the stairs rise <a class='activateBtn' data-target='UP' href='#'>up</a> to more seats and the back of the lecture theatre.
                         </div>
-                    </div>
+                    </div> 
                     <div class="inventory">
-                        Empty Empty Empty
                     </div>                    
-                </div>    
-            </div> 
+                </footer>
+            </div>          
         </a-scene>
-    </three60>      
+    </three60> 
+    <script src="logic.js"></script>
+    <script src="utility.js"></script>         
   </body>
 </html>

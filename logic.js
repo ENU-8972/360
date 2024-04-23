@@ -10,15 +10,15 @@ function handleButtonClick(buttonId) {
     //Check the URL and possible outcomes
     //List of each URL
     var urls = window.location.href;
-    alert(urls);
+    //alert(urls);
     const tURL = urls.substring(urls.lastIndexOf('/')+1).replace('#', '');
 
     let navigate = false;
     let innerv = "";
     let feedback;
     let newURL;
-    alert(buttonId);
-    alert("handleButtonClick " + tURL);
+    //alert(buttonId);
+    //alert("handleButtonClick " + tURL);
     switch(tURL) {
         case "awake.html":
             switch(buttonId) {
@@ -33,7 +33,7 @@ function handleButtonClick(buttonId) {
             break;
  
         case "lectureUp.html":
-            alert("switched: " + tURL);
+            //alert("switched: " + tURL);
             switch(buttonId) {
                 case "UP":
                     navigate = true;
@@ -62,7 +62,7 @@ function handleButtonClick(buttonId) {
                         newURL = "stairs7.html";
                         break;
     
-                    case "DOWN":
+                    case "N":
                         navigate = true;
                         newURL = "lecturestage.html";
                         break; 
@@ -99,7 +99,7 @@ function handleButtonClick(buttonId) {
                     }
                     break;                
 
-                case "stairs11":
+                case "stairs11.html":
                     switch(buttonId) {
                         case "UP":
                             navigate = true;
@@ -120,20 +120,74 @@ function handleButtonClick(buttonId) {
                         default:
                             innerv = noperesponse();
                     }
-                    break; 
+                    break;
+                    
+                    case "lecturestage.html":
+                    switch(buttonId) {
+                        case "N":
+                            navigate = true;
+                            newURL = "lost_property.html";
+                            break;
+        
+                        case "E":
+                            navigate = true;
+                            newURL = "lecturn.html";
+                            break;
+        
+                        case "S":
+                            //Piece of paper
+                            navigate = true;
+                            newURL = "stairs3.html";
+                            break;                             
+
+                        case "W":
+                            navigate = true;
+                            newURL = "main_door.html";
+                            break;
+        
+                        default:
+                            innerv = noperesponse();
+                    }
+                    break;
+
+                    case "main_door.html":
+                    switch(buttonId) {
+                        case "N":
+                            navigate = true;
+                            newURL = "light_switch.html";
+                            break;
+        
+                        case "E":
+                            navigate = true;
+                            newURL = "lecturestage.html";
+                            break;
+        
+                        case "W":
+                            navigate = false;
+                            newURL = "i_lecturedoor.jpg";
+                            innerv = "I don't think I should have touched that."
+                            break;
+        
+                        default:
+                            innerv = noperesponse();
+                    }
+                    break;
+                    
 
         default:
             innerv = noperesponse();
     }
     
     if (innerv !== "") {
-        document.getElementById("innervoice").innerHTML = innerv;
+        document.getElementById("innerv2").innerHTML = innerv;
     }
 
     if (navigate === true) {
         //alert(newURL);
         //Load the URL just calculated
         window.location.href = newURL;
+    } else if (newURL !== "") {
+        document.getElementById("infobox").innerHTML = "<div><img src='./images/i_lecturedoor.jpg' alt='Locked lecture theatre door'></div>"
     }
  
 };
@@ -252,7 +306,7 @@ function noperesponse() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    alert("ActivateButton");
+    //alert("ActivateButton");
     var activateButton = document.querySelectorAll('.activateBtn');
     activateButton.forEach(function(link){
         link.addEventListener("click", activateButtonClick);

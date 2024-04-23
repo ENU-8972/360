@@ -80,7 +80,6 @@ function toggleVideoCheckin () {
     video.play();
 };
 
-
 var e = document.getElementById("yescode");
 if (e) {
     //alert("yescode toggle");
