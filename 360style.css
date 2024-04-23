@@ -223,6 +223,8 @@ footer {
     min-height: min-content;
     z-index: 1000;
     height: fit-content;
+    position: fixed;
+    bottom@ 0;
 }
 
 /*
