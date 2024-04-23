@@ -14,7 +14,9 @@ function handleButtonClick(buttonId) {
     const tURL = urls.substring(urls.lastIndexOf('/')+1).replace('#', '');
 
     let navigate = false;
-    let innerv = "";
+    let innerv1 = "";
+    let innerv2 = "";
+    let innerv3 = "";
     let feedback;
     let newURL;
     //alert(buttonId);
@@ -28,7 +30,7 @@ function handleButtonClick(buttonId) {
                     break;
 
                 default:
-                    innerv = noperesponse();
+                    innerv3 = noperesponse();
             }
             break;
  
@@ -51,7 +53,7 @@ function handleButtonClick(buttonId) {
                     break;
 
                 default:
-                    innerv = noperesponse();
+                    innerv3 = noperesponse();
             }
             break;
 
@@ -73,12 +75,12 @@ function handleButtonClick(buttonId) {
                         break;
 
                     case "NE":
-                            navigate = false;
-                            newURL = "lecturn.html";
-                            break;                        
+                        navigate = false;
+                        newURL = "lecturn.html";
+                        break;                        
     
                     default:
-                        innerv = noperesponse();
+                        innerv3 = noperesponse();
                 }
                 break;
 
@@ -95,7 +97,7 @@ function handleButtonClick(buttonId) {
                             break;                     
         
                         default:
-                            innerv = noperesponse();
+                            innerv3 = noperesponse();
                     }
                     break;                
 
@@ -118,7 +120,7 @@ function handleButtonClick(buttonId) {
                                 break;                             
         
                         default:
-                            innerv = noperesponse();
+                            innerv3 = noperesponse();
                     }
                     break;
                     
@@ -130,8 +132,10 @@ function handleButtonClick(buttonId) {
                             break;
         
                         case "E":
-                            navigate = true;
+                            navigate = false;
                             newURL = "lecturn.html";
+                            innerv2 = "It is too dark over there"
+                            innerv3 = "and I'm scared of the dark"
                             break;
         
                         case "S":
@@ -146,7 +150,7 @@ function handleButtonClick(buttonId) {
                             break;
         
                         default:
-                            innerv = noperesponse();
+                            innerv3 = noperesponse();
                     }
                     break;
 
@@ -163,31 +167,106 @@ function handleButtonClick(buttonId) {
                             break;
         
                         case "W":
-                            navigate = false;
-                            newURL = "i_lecturedoor.jpg";
-                            innerv = "I don't think I should have touched that."
+                            navigate = true;
+                            newURL = "awake.html";
+                            innerv2 = "I don't think I should have touched that."
                             break;
         
                         default:
-                            innerv = noperesponse();
+                            innerv3 = noperesponse();
                     }
                     break;
+
+                    case "light_switch.html":
+                    switch(buttonId) {
+        
+                        case "S":
+                            navigate = true;
+                            newURL = "main_door.html";
+                            break;
+        
+                        case "USE":
+                            navigate = true;
+                            newURL = "lecture_stage_lit.html";
+                            innerv2 = "Thank goodness for that."
+                            break;
+        
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;                    
                     
+                    case "lecture_stage_lit.html":
+                    switch(buttonId) {
+
+                        case "UP":
+                            navigate = true;
+                            newURL = "stairs_8_lit.html";
+                            break;
+
+                        case "E":
+                            navigate = true;
+                            newURL = "lecturn.html";
+                            break;
+                        
+                        case "W":
+                            navigate = true;
+                            newURL = "awake.html";
+                            innerv2 = "That surprised me..."
+                            break;
+
+
+                        case "USE":
+                            navigate = true;
+                            newURL = "lecturestage.html";
+                            innerv2 = "I don't think I should have touched that."
+                            break;
+        
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;
+
+                    case "lecturn.html":
+                    switch(buttonId) {
+                            
+                        case "W":
+                            navigate = true;
+                            newURL = "lecture_stage_lit.html";
+                            innerv1 = "I wonder what my grade will be, if I ever"
+                            innerv2 = "get out of here."
+                            break;
+            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;
 
         default:
-            innerv = noperesponse();
+            innerv3 = noperesponse();
     }
     
-    if (innerv !== "") {
-        document.getElementById("innerv2").innerHTML = innerv;
+    if (innerv1 !== "") {
+        document.getElementById("innerv1").innerHTML = innerv1;
     }
+
+    if (innerv2 !== "") {
+        document.getElementById("innerv2").innerHTML = innerv2;
+    }
+
+    if (innerv3 !== "") {
+        document.getElementById("innerv3").innerHTML = innerv3;
+    }
+        
 
     if (navigate === true) {
         //alert(newURL);
         //Load the URL just calculated
         window.location.href = newURL;
     } else if (newURL !== "") {
-        document.getElementById("infobox").innerHTML = "<div><img src='./images/i_lecturedoor.jpg' alt='Locked lecture theatre door'></div>"
+        var elm = document.getElementById("infobox");
+        elm.innerHTML = "<div><img src='./images/i_lecturedoor.jpg' alt='Locked lecture theatre door'></div>";
+        elm.style.display = "block";
     }
  
 };
