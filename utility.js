@@ -4,7 +4,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     //Get all the localStorage settings and apply the to the html
     localStorage.setItem("lastthought", "Nooooooooo");
-    document.getElementById("infobox").innerHTML = localStorage.getItem("lastthought");
+    document.getElementById("innerv1").innerHTML = localStorage.getItem("lastthought");
 });
 
 
