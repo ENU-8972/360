@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
 //Stop mouse down scrolling from selecting text when moving the a-frame
 var mouseDown = false;
 

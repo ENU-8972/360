@@ -75,8 +75,10 @@ function handleButtonClick(buttonId) {
                         break;
 
                     case "NE":
-                        navigate = true;
+                        navigate = false;
                         newURL = "lecturn.html";
+                        innerv1 = "No way, too creepy!";
+                        innerv2 = "Head to the light.";
                         break;                        
     
                     default:
@@ -134,8 +136,8 @@ function handleButtonClick(buttonId) {
                         case "E":
                             navigate = false;
                             newURL = "lecturn.html";
-                            innerv2 = "It is too dark over there"
-                            innerv3 = "and I'm scared of the dark"
+                            innerv2 = "It is too dark over there";
+                            innerv3 = "and I'm scared of the dark";
                             break;
         
                         case "S":
@@ -169,7 +171,7 @@ function handleButtonClick(buttonId) {
                         case "W":
                             navigate = true;
                             newURL = "awake.html";
-                            innerv2 = "I don't think I should have touched that."
+                            innerv2 = "I don't think I should have touched that.";
                             break;
         
                         default:
@@ -188,7 +190,7 @@ function handleButtonClick(buttonId) {
                         case "USE":
                             navigate = true;
                             newURL = "lecture_stage_lit.html";
-                            innerv2 = "Thank goodness for that."
+                            innerv2 = "Thank goodness for that.";
                             break;
         
                         default:
@@ -212,14 +214,14 @@ function handleButtonClick(buttonId) {
                         case "W":
                             navigate = true;
                             newURL = "awake.html";
-                            innerv2 = "That surprised me..."
+                            innerv2 = "That surprised me...";
                             break;
 
 
                         case "USE":
                             navigate = true;
                             newURL = "lecturestage.html";
-                            innerv2 = "I don't think I should have touched that."
+                            innerv2 = "Darkness and fear again; joy.";
                             break;
         
                         default:
@@ -233,8 +235,8 @@ function handleButtonClick(buttonId) {
                         case "W":
                             navigate = true;
                             newURL = "lecture_stage_lit.html";
-                            innerv1 = "I wonder what my grade will be, if I ever"
-                            innerv2 = "get out of here."
+                            innerv1 = "I wonder what my grade will be, if I ever";
+                            innerv2 = "get out of here.";
                             break;
             
                         default:
@@ -242,22 +244,404 @@ function handleButtonClick(buttonId) {
                     }
                     break;
 
+                    case "lost_property.html":
+                    switch(buttonId) {
+                            
+                        case "S":
+                            navigate = true;
+                            newURL = "lecturestage.html";
+                            break;
+            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;
+
+                    case "stairs_8_lit.html":
+                    switch(buttonId) {
+                            
+                        case "UP":
+                            navigate = true;
+                            newURL = "duct.html";
+                            break;
+
+                        case "DOWN":
+                            navigate = true;
+                            newURL = "lecture_stage_lit.html";
+                            break;
+
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;
+
+                    case "duct.html":
+                    switch(buttonId) {
+                            
+                        case "UP":
+                            navigate = true;
+                            newURL = "maze_h.html";
+                            break;
+
+                        case "DOWN":
+                            navigate = true;
+                            newURL = "stairs_8_lit.html";
+                            break;
+    
+
+                        case "W":
+                            navigate = true;
+                            newURL = "awake.html";
+                            break;
+                            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;                    
+
+                    case "maze_h.html":
+                    switch(buttonId) {
+
+                        case "DOWN":
+                            navigate = true;
+                            newURL = "duct.html";
+                            break;                            
+                            
+                        case "S":
+                            navigate = true;
+                            newURL = "maze_q.html";
+                            break;
+                                
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;
+
+                    case "maze_q.html":
+                    switch(buttonId) {
+
+                        case "S":
+                            navigate = true;
+                            newURL = "maze_j.html";
+                            break;                            
+                            
+                        case "W":
+                            navigate = true;
+                            newURL = "maze_m.html";
+                            break;
+                                
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;
+
+                    case "maze_m.html":
+                    switch(buttonId) {
+
+                        case "E":
+                            navigate = true;
+                            newURL = "maze_r.html";
+                            break;                            
+                                
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;                    
+    
+                    case "maze_d.html":
+                    switch(buttonId) {
+
+                        case "S":
+                            navigate = true;
+                            newURL = "maze_p.html";
+                            break;                            
+                                
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;
+
+                    case "maze_s.html":
+                    switch(buttonId) {
+
+                        case "E":
+                            navigate = true;
+                            newURL = "Awake.html";
+                            break;                            
+                                
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;
+
+                    case "maze_j.html":
+                    switch(buttonId) {
+
+                        case "N":
+                            navigate = true;
+                            newURL = "maze_q.html";
+                            break;
+
+                        case "E":
+                            navigate = true;
+                            newURL = "maze_t.html";
+                            break;                            
+
+                        case "S":
+                            navigate = true;
+                            newURL = "maze_p.html";
+                            break;                            
+                        
+                        case "W":
+                            navigate = true;
+                            newURL = "maze_s.html";
+                            break;                            
+                                                            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;
+
+                    case "maze_t.html":
+                    switch(buttonId) {
+
+                        case "N":
+                            navigate = true;
+                            newURL = "maze_d.html";
+                            break;
+
+                        case "E":
+                            navigate = true;
+                            newURL = "maze_n.html";
+                            break;                                                    
+                        
+                        case "W":
+                            navigate = true;
+                            newURL = "maze_j.html";
+                            break;                            
+                                                            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;                    
+
+                    
+                    case "maze_n.html":
+                    switch(buttonId) {
+
+                        case "E":
+                            navigate = true;
+                            newURL = "maze_x.html";
+                            break;                            
+                        
+                        case "W":
+                            navigate = true;
+                            newURL = "maze_t.html";
+                            break;                            
+                                                            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;
+
+
+                    case "maze_x.html":
+                    switch(buttonId) {
+                        
+                        case "W":
+                            navigate = true;
+                            newURL = "awake.html";
+                            break;                            
+                                                            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;       
+
+                    case "maze_a.html":
+                    switch(buttonId) {
+
+                        case "E":
+                            navigate = true;
+                            newURL = "maze_p.html";
+                            break;                            
+                                                            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;      
+                    
+                    case "maze_p.html":
+                    switch(buttonId) {
+
+                        case "N":
+                            navigate = true;
+                            newURL = "maze_j.html";
+                            break;
+
+                        case "S":
+                            navigate = true;
+                            newURL = "maze_w.html";
+                            break;                            
+                        
+                        case "W":
+                            navigate = true;
+                            newURL = "maze_a.html";
+                            break;                            
+                                                            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;
+                    
+                    case "maze_e.html":
+                    switch(buttonId) {
+
+                        case "S":
+                            navigate = true;
+                            newURL = "maze_r.html";
+                            break;                            
+                                                            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;      
+                    
+                    case "maze_w.html":
+                    switch(buttonId) {
+
+                        case "N":
+                            navigate = true;
+                            newURL = "maze_p.html";
+                            break;
+
+                        case "E":
+                            navigate = true;
+                            newURL = "maze_r.html";
+                            break;                            
+
+                        case "S":
+                            navigate = true;
+                            newURL = "maze_v.html";
+                            break;                            
+                                                            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;
+                    
+                    case "maze_r.html":
+                    switch(buttonId) {
+
+                        case "N":
+                            navigate = true;
+                            newURL = "maze_e.html";
+                            break;
+
+                        case "S":
+                            navigate = true;
+                            newURL = "maze_f.html";
+                            break;                            
+                        
+                        case "W":
+                            navigate = true;
+                            newURL = "maze_w.html";
+                            break;                            
+                                                            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;
+                    
+                    case "maze_y.html":
+                    switch(buttonId) {
+
+                        case "S":
+                            navigate = true;
+                            newURL = "maze_p.html";
+                            break;                            
+                        
+                        case "W":
+                            navigate = true;
+                            newURL = "maze_s.html";
+                            break;                            
+                                                            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;    
+                    
+                    case "maze_v.html":
+                    switch(buttonId) {
+
+                        case "DOWN":
+                            navigate = true;
+                            newURL = "awake.html";
+                            break;
+                                                            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break; 
+                    
+                    case "maze_f.html":
+                    switch(buttonId) {
+
+                        case "N":
+                            navigate = true;
+                            newURL = "maze_r.html";
+                            break;
+
+                        case "E":
+                            navigate = true;
+                            newURL = "maze_b.html";
+                            break;                            
+                        
+                        case "W":
+                            navigate = true;
+                            newURL = "maze_v.html";
+                            break;                            
+                                                            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;     
+                    
+                    case "maze_b.html":
+                    switch(buttonId) {
+
+                        case "N":
+                            navigate = true;
+                            newURL = "maze_y.html";
+                            break;
+                        
+                        case "W":
+                            navigate = true;
+                            newURL = "maze_f.html";
+                            break;                            
+                                                            
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;           
+
         default:
             innerv3 = noperesponse();
     }
     
     if (innerv1 !== "") {
-        localStorage.set("innervoice1", innerv1);
+        localStorage.setItem("innervoice1", innerv1);
         document.getElementById("innerv1").innerHTML = innerv1;
+
     }
 
     if (innerv2 !== "") {
-        localStorage.set("innervoice2", innerv2);
+        localStorage.setItem("innervoice2", innerv2);
         document.getElementById("innerv2").innerHTML = innerv2;
     }
 
     if (innerv3 !== "") {
-        localStorage.set("innervoice3", innerv3);
+        localStorage.setItem("innervoice3", innerv3);
         document.getElementById("innerv3").innerHTML = innerv3;
     }
         
@@ -269,7 +653,7 @@ function handleButtonClick(buttonId) {
     } else if (newURL !== "") {
         var elm = document.getElementById("infobox");
         elm.innerHTML = "<div><img src='./images/i_lecturedoor.jpg' alt='Locked lecture theatre door'></div>";
-        elm.style.display = "block";
+        //elm.style.display = "block";
     }
  
 };
