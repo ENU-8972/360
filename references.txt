@@ -18,3 +18,7 @@ https://befused.com/javascript/get-filename-url/
 
 aHREF link call button
 https://www.shecodes.io/athena/17038-how-to-add-a-link-to-my-button-in-html
+
+Change colour only on a page after the Look button has been clicked
+https://stackoverflow.com/questions/58670708/is-it-possible-to-change-all-anchor-tags-properties-on-a-website-at-once
+https://www.w3schools.com/jsref/met_document_queryselectorall.asp

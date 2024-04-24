@@ -21,6 +21,12 @@ function handleButtonClick(buttonId) {
     let newURL;
     //alert(buttonId);
     //alert("handleButtonClick " + tURL);
+
+    if (buttonId  === "LOOK") {
+        document.querySelectorAll(".activateBtn") 
+    }
+
+
     switch(tURL) {
         case "awake.html":
             switch(buttonId) {
@@ -324,6 +330,11 @@ function handleButtonClick(buttonId) {
 
                     case "maze_q.html":
                     switch(buttonId) {
+
+                        case "N":
+                            navigate = true;
+                            newURL = "maze_h.html";
+                            break;                        
 
                         case "S":
                             navigate = true;

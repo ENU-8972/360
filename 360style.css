@@ -3,8 +3,11 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.activateBtn {
+    color: hotpink;   
+}
+
 a {
-    color: hotpink;
     text-decoration-line: none;
 }
 
