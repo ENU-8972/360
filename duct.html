@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="360style.css">
   </head>
   <body>
-    <audio id="awakening" src="audio/awakening.mp3" type="audio/mp3" autoplay="autoplay"></audio>
-    <div class="fadefromblack"></div>
+    <div class="blackin"></div>
     <three60>
         <a-scene xr-mode-ui="enabled: false">
-            <a-sky src="./images/awakecarpet.jpg" rotation="0 -90 0"></a-sky>
+            <a-sky src="./images/duct.jpg" rotation="0 -90 0"></a-sky>
             <header id="header" class="header">
                 <div class="time">13:10</div>
-                <div id="mtitle" class="mtitle" style="display: none;">Lecture seats</div>
                 <div class="menu">        
                     <div class="barburger" style="display: none;">
                         <div class="bar1"></div>
@@ -56,12 +54,12 @@
                     </div>
                     <div class="descriptive" id="info">
                         <div class="descriptive" id="title">
-                            Lecture seats
+                            Landing
                         </div>
                         <div class="descriptive" id="description">
-                            Opening your eyes you find yourself lying on the floor of the dimly lit lecture theatre.  
-                            You have no idea what time it is or how long you have remaining to submit your coursework. 
-                            Go back to <a href='index.html'>sleep</a> or get <a class='activateBtn' data-target='UP' href='#'>up</a>
+                            At the top of the stairs there is a small landing area with an empty table.  Above you 
+                            the air conditioning <a class='activateBtn' data-target='UP' href='#'>ducts</a> fan out over the room.  To the <a class='activateBtn' data-target='W' href='#'>west</a> there is a door.
+                              The stairs lead back <a class='activateBtn' data-target='DOWN' href='#'>down</a>.  
                         </div>
                     </div> 
                     <div class="inventory">
@@ -69,12 +67,8 @@
                 </footer>
             </div>          
         </a-scene>
-    </three60>
-    <script src="logic.js"></script>    
-    <script src="utility.js"></script>
-    <script>window.onload = function() {
-        document.getElementById("awakening").play();
-    }</script>
+    </three60> 
+    <script src="logic.js"></script>
+    <script src="utility.js"></script>         
   </body>
-
 </html>

@@ -106,12 +106,18 @@ a {
     .infospace { flex: 4 0px; }
     .content { order: 1; } 
     .base { order: 2; }
+    
    }
 
 @media all and (max-width: 900px) {
     .base { flex-direction: column; }
-    .grid-compass { order: 2}
-    .descriptive { order: 1}
+    .grid-compass { order: 2;}
+    .descriptive { 
+        order: 1;
+        font-size: large; 
+    }
+    .descriptive #title { display: none; }
+    .mtitle { display: block; }
 }
 
 
@@ -296,7 +302,7 @@ footer {
     z-index: 1000;
     color: rgba(243, 243, 243, 0.8);
     background: rgba(30, 30, 30, 0.45);
-    padding: 10px;
+    padding: 1.5%;
     border-radius: 15px;
     width: auto;
     justify-content: last baseline;
