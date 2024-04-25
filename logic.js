@@ -33,6 +33,8 @@ function handleButtonClick(buttonId) {
 			switch (buttonId) {
 				case "UP":
 					navigate = true;
+                    innerv1 = "Silence... Everyone has gone"
+                    innerv2 = "My laptop and bag, gone."
 					newURL = "lectureUp.html";
 					break;
 
@@ -133,6 +135,19 @@ function handleButtonClick(buttonId) {
 			}
 			break;
 
+        case "landing.html":
+            switch (buttonId) {
+
+                case "DOWN":
+                    navigate = true;
+                    newURL = "awake.html";
+                    break;
+
+                default:
+                    innerv3 = noperesponse();
+            }
+            break;  
+                      
 		case "lecturestage.html":
 			switch (buttonId) {
 				case "N":
