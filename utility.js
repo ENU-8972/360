@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("innerv2").innerHTML = localStorage.getItem("innervoice2");
     document.getElementById("innerv3").innerHTML = localStorage.getItem("innervoice3");
 
+    document.getElementById("mtitle").innerHTML = document.getElementById("title").innerHTML;
+
     clearinnervoicestorage();
 
     //const linklist = document.querySelectorAll("activateBtn");

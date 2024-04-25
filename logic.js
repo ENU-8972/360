@@ -19,7 +19,7 @@ function handleButtonClick(buttonId) {
 	let innerv3 = "";
 	let feedback;
 	let newURL;
-	//alert(buttonId);
+	alert(buttonId);
 	alert("handleButtonClick " + tURL);
 
 
@@ -406,7 +406,7 @@ function handleButtonClick(buttonId) {
 
 				case "E":
 					navigate = true;
-					newURL = "Awake.html";
+					newURL = "awake.html";
 					break;
 
 				default:

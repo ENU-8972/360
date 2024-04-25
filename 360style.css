@@ -207,6 +207,15 @@ a {
     height: inherit;
 }
 
+.mtitle {
+    font-size: larger;
+    color: rgba(243, 243, 243, 0.8);
+    z-index: 1000;
+    display: block;
+    width:fit-content;
+    justify-content: space-around;
+}
+
 .content {
     flex: 1 1 auto;
     position: relative;
