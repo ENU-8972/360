@@ -22,9 +22,10 @@ function handleButtonClick(buttonId) {
     //alert(buttonId);
     //alert("handleButtonClick " + tURL);
 
+
     if (buttonId  === "LOOK") {
         document.querySelectorAll(".activateBtn") 
-    }
+    };
 
 
     switch(tURL) {
@@ -268,7 +269,7 @@ function handleButtonClick(buttonId) {
                             
                         case "UP":
                             navigate = true;
-                            newURL = "duct.html";
+                            newURL = "landing_lit.html";
                             break;
 
                         case "DOWN":
@@ -276,6 +277,29 @@ function handleButtonClick(buttonId) {
                             newURL = "lecture_stage_lit.html";
                             break;
 
+                        default:
+                            innerv3 = noperesponse();
+                    }
+                    break;
+
+                    case "landing_lit.html":
+                    switch(buttonId) {
+    
+                        case "DOWN":
+                            navigate = true;
+                            newURL = "stairs_8_lit.html";
+                            break;    
+                        
+                        case "E":
+                            navigate = true;
+                            newURL = "duct.html";
+                            break;
+                        
+                        case "W":
+                            navigate = true;
+                            newURL = "awake.html";
+                            break;
+                            
                         default:
                             innerv3 = noperesponse();
                     }
@@ -644,7 +668,9 @@ function handleButtonClick(buttonId) {
         default:
             innerv3 = noperesponse();
     }
-    
+
+    clearinnervoice();
+
     if (innerv1 !== "") {
         localStorage.setItem("innervoice1", innerv1);
         document.getElementById("innerv1").innerHTML = innerv1;
@@ -674,6 +700,22 @@ function handleButtonClick(buttonId) {
  
 };
 
+function clearinnervoice() {    
+    //Clear all innervoice text before it is set with new content
+    document.getElementById("innerv1").innerHTML = "";
+    document.getElementById("innerv2").innerHTML = "";
+    document.getElementById("innerv3").innerHTML = "";
+};
+
+function clearinnervoicestorage() {
+    //clear the innervoice items in storage.
+    //This is called after they have been shown on screen and prevents
+    //them from being shown repeatedly.
+    localStorage.setItem("innervoice1", "");
+    localStorage.setItem("innervoice2", "");
+    localStorage.setItem("innervoice3", "");
+};
+
 
 function activateButtonClick(event) {
     event.preventDefault(); // Don't do default behavior - to stop the URL getting the # added
@@ -697,6 +739,8 @@ function noperesponse() {
     //Return a string response based random between 1-20, to increase variety in the response
     var response;
     var rnum = Math.floor(Math.random() *20) + 1;
+
+    clearinnervoice();
 
     switch(rnum) {
         case 1:

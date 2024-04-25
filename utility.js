@@ -2,7 +2,7 @@
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    //Get all the localStorage settings and apply the to the html
+    //Get all the localStorage settings and apply to the html
     //localStorage.setItem("lastthought", "Nooooooooo");
     //document.getElementById("innerv1").innerHTML = localStorage.getItem("lastthought");
     
@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("innerv2").innerHTML = localStorage.getItem("innervoice2");
     document.getElementById("innerv3").innerHTML = localStorage.getItem("innervoice3");
 
+    clearinnervoicestorage();
 
     //const linklist = document.querySelectorAll("activateBtn");
     //linklist.forEach(e); {
