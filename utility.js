@@ -9,10 +9,26 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("innerv1").innerHTML = localStorage.getItem("innervoice1");
     document.getElementById("innerv2").innerHTML = localStorage.getItem("innervoice2");
     document.getElementById("innerv3").innerHTML = localStorage.getItem("innervoice3");
-
+    
     document.getElementById("mtitle").innerHTML = document.getElementById("title").innerHTML;
+    
+    //var thisgtime = new Date();
+    var thisgtime = new Date(localStorage.getItem("gametime"));
+
+    alert(thisgtime);
+    
+    var ghours = thisgtime.getHours();
+    var gmins = thisgtime.getMinutes();
+
+    alert(ghours);
+    alert(gmins);
+
+    //document.getElementById("gtime").innerHTML = thisgtime.getHours().toString + ":" + thisgtime.getMinutes().toString;
 
     clearinnervoicestorage();
+
+    alert("updt");
+    updategametime();
 
     //const linklist = document.querySelectorAll("activateBtn");
     //linklist.forEach(e); {
@@ -70,9 +86,19 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 */
 
+function updategametime() {    
+    //Read the gametime localstorage field and update this
+    //by a minute everytime a page is loaded
+
+    var thisDate = new Date(localStorage.getItem("gametime"));
+    thisDate.setMinutes(thisDate.getMinutes() + 1);
+    alert("bf storage" + thisDate);
+    localStorage.setItem("gametime", thisDate);  
+};
 
 
-function toggleVideoCheckin () {
+
+function toggleVideoCheckin() {
     //Function that replaces autoplay for the video
     //This will now require a user to click "check in" which 
     //will then hide the checkin div and show and start the video div

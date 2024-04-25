@@ -22,3 +22,6 @@ https://www.shecodes.io/athena/17038-how-to-add-a-link-to-my-button-in-html
 Change colour only on a page after the Look button has been clicked
 https://stackoverflow.com/questions/58670708/is-it-possible-to-change-all-anchor-tags-properties-on-a-website-at-once
 https://www.w3schools.com/jsref/met_document_queryselectorall.asp
+
+Adding to time
+https://stackoverflow.com/questions/48442305/how-to-add-24-hr-format-into-total-hours-in-javascript

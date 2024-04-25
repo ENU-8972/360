@@ -4,29 +4,6 @@
     <title>deadLINE</title>
     <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="360style.css">
-    <!--
-  "gametime":"13:10"
-, "fullscreen":0
-, "inventory":{"slot1":"empty", "slot2":"empty","slot3":"empty"}
-, "lastthought":"empty"
-, "location":   {"lectureUp.html":  {     "visited":0
-                                        , "searched":0
-                                        , "items":["<a class='item' data-id='gum'>gum</a>"]
-                                    }
-}                                    
-    -->
-    <script>
-        localStorage.Clear();
-        //Set localStorage from JSON start position file
-        //document.documentElement.requestFullscreen();
-        //localStorage.setItem('fullscreen', 1);
-        localStorage.setItem("gametime", "13:10");
-        localStorage.setItem("inventory", "{'slot1':'empty', 'slot2':'empty', 'slot3':'empty'}");
-        localStorage.setItem("lastthought", "empty");
-        localStorage.setItem("innervoice1", "What the hell is going on.");
-        localStorage.setItem("innervoice2", "Where is my bag too?");
-        localStorage.setItem("innervoice3", "I am so stuffed explaining this.");
-    </script>
     <style>
         body, html{
             background-color:#000;
@@ -50,6 +27,12 @@
             <img src="./images/CheckInWebTechNoCode.png" alt="Student check in screen">
         </div>
     </div>
-  <script src="utility.js"></script>    
+    <script>
+        //Set localStorage for start position.
+        localStorage.clear();
+
+        var newDate = new Date("April 26, 2024 13:10:00");
+        localStorage.setItem("gametime", newDate);
+    </script>    
   </body>
 </html>
