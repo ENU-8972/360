@@ -4,7 +4,7 @@ body {
 }
 
 .activateBtn {
-    color: hotpink;   
+    color: hotpink;
 }
 
 a {
@@ -16,7 +16,9 @@ a {
     cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: #ffffff;
@@ -31,7 +33,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 1);
     opacity: 1;
     z-index: 9998;
     animation: fadefromblack 7s ease-out forwards;
@@ -54,7 +56,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 1);
     opacity: 1;
     z-index: 9998;
     animation: blackin 3s ease-out forwards;
@@ -67,11 +69,11 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 1);
     opacity: 0.75;
     z-index: 9900;
     pointer-events: none;
-}    
+}
 
 .infoimage {
     display: flex;
@@ -88,7 +90,6 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
-    
 }
 
 .infoimage img {
@@ -106,23 +107,35 @@ a {
 */
 
 @media all and (max-width: 900px) {
-    .infospace { flex: 4 0px; }
-    .content { order: 1; } 
-    .base { order: 2; }
-    
-   }
-
-@media all and (max-width: 900px) {
-    .base { flex-direction: column; }
-    .grid-compass { order: 2;}
-    .descriptive { 
-        order: 1;
-        font-size: large; 
+    .infospace {
+        flex: 4 0px;
     }
-    .descriptive #title { display: none; }
-    .mtitle { display: block; }
+    .content {
+        order: 1;
+    }
+    .base {
+        order: 2;
+    }
 }
 
+@media all and (max-width: 900px) {
+    .base {
+        flex-direction: column;
+    }
+    .grid-compass {
+        order: 2;
+    }
+    .descriptive {
+        order: 1;
+        font-size: large;
+    }
+    .descriptive #title {
+        display: none;
+    }
+    .mtitle {
+        display: block;
+    }
+}
 
 @keyframes blackin {
     from {
@@ -133,7 +146,6 @@ a {
         opacity: 0;
     }
 }
-
 
 .videoplay {
     z-index: 90;
@@ -168,30 +180,31 @@ a {
     z-index: 1000;
 }
 
-
 .header {
     display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
+    flex: auto;
     background: rgba(30, 30, 30, 0.45);
     width: 100%;
     justify-content: space-between;
-    height: 5%;
+    height: 5vh;
     min-height: fit-content;
 }
 
 .header > div {
-    width: 100%;
     /*background-color: DodgerBlue;*/
     background: rgba(30, 30, 30, 0.45);
+    width: 100%;
 }
 
 .time {
     text-align: left;
-    background-color: #ffffff;
+    color: rgba(243, 243, 243, 0.8);
     justify-content: left;
-    font-size:30px;
+    font-size: 30px;
     height: inherit;
+    z-index: 1000;
+    border: 2px;
+    /*padding: 0.5%;*/
 }
 
 .menu {
@@ -205,6 +218,7 @@ a {
     z-index: 1000;
     justify-content: right;
     height: inherit;
+    display: block;
 }
 
 .mtitle {
@@ -212,7 +226,7 @@ a {
     color: rgba(243, 243, 243, 0.8);
     z-index: 1000;
     display: block;
-    width:fit-content;
+    width: fit-content;
     justify-content: space-around;
 }
 
@@ -247,7 +261,6 @@ a {
     position: fixed;
     bottom: 0;
 }
-
 
 /*
 footer {
@@ -298,7 +311,7 @@ footer {
     font-size: 12px;
     height: max-content;
 }
-*/  
+*/
 
 .compassbtn {
     justify-content: center;
@@ -322,6 +335,7 @@ footer {
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
+    font: larger;
 }
 
 .inventory {
@@ -332,7 +346,6 @@ footer {
     height: max-content;
     width: 15vw;
 }
-
 
 .invslot {
     grid-column-start: 5;
@@ -349,15 +362,13 @@ footer {
     border-radius: 15px;
 }
 
-
-
 .fadefromblack {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 1);
     opacity: 1;
     z-index: 9998;
     animation: fadefromblack 7s ease-out forwards;
@@ -380,7 +391,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 1);
     opacity: 1;
     z-index: 9998;
     animation: blackin 3s ease-out forwards;
@@ -443,4 +454,8 @@ footer {
 
 #description {
     width: 95%;
+}
+
+#title {
+    display: none;
 }
