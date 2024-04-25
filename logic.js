@@ -147,7 +147,7 @@ function handleButtonClick(buttonId) {
                     innerv3 = noperesponse();
             }
             break;  
-                      
+
 		case "lecturestage.html":
 			switch (buttonId) {
 				case "N":
@@ -503,7 +503,7 @@ function handleButtonClick(buttonId) {
 		case "maze_x.html":
 			switch (buttonId) {
 
-				case "W":
+				case "DOWN":
 					navigate = true;
 					newURL = "awake.html";
 					break;
@@ -552,9 +552,9 @@ function handleButtonClick(buttonId) {
 		case "maze_e.html":
 			switch (buttonId) {
 
-				case "S":
+				case "UP":
 					navigate = true;
-					newURL = "maze_r.html";
+					newURL = "maze_w.html";
 					break;
 
 				default:

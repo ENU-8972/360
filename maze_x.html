@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="a-fullscreen">
+  <head>
+    <title>deadLINE</title>
+    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="360style.css">
+  </head>
+  <body>
+    <div class="blackin"></div>
+    <three60>
+        <a-scene xr-mode-ui="enabled: false">
+            <a-sky src="./images/maze.jpg" rotation="0 -90 0"></a-sky>
+            <header id="header" class="header">
+                <div id="gtime" class="time"></div>
+                <div id="mtitle" class="mtitle"></div>
+                <div class="menu">        
+                    <div id="burger" class="barburger" style="display: none;">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+            </header> 
+            <div id="spacer_span">spacer span</div>           
+            <div id="ui" class="flex-container">
+                <div class="flexinner">
+                    <div id="innerv1" class="innervoice"></div>
+                    <div id="innerv2" class="innervoice"></div>
+                    <div id="innerv3" class="innervoice"></div>
+                </div>
+            </div>
+            <div id="infospace" class="flex-container">
+                <div class="content">
+                    <div id="infobox" class="info" style="display: none;"></div>
+                    <!--<div><p id="innervoice"></p></div>-->
+                </div>
+                <footer class="base">
+                    <div class="grid-compass">
+                        <!--First row-->
+                        <button id="NW" class="compassbtn">NW</button>
+                        <button id="N" class="compassbtn">N</button>
+                        <button id="NE" class="compassbtn">NE</button>
+                        <button id="UP" class="compassbtn">UP</button>
+                        <!--Second row-->
+                        <button id="W" class="compassbtn">W</button>
+                        <button id="USE" class="compassbtn">USE</button>
+                        <button id="E" class="compassbtn">E</button>
+                        <button id="LOOK" class="compassbtn">LOOK</button>
+                        <!--Third row-->
+                        <button id="SW" class="compassbtn">SW</button>
+                        <button id="S" class="compassbtn">S</button> 
+                        <button id="SE" class="compassbtn">SE</button>
+                        <button id="DOWN" class="compassbtn">DOWN</button> 
+                    </div>
+                    <div class="descriptive" id="info">
+                        <div class="descriptive" id="title">
+                            Maze
+                        </div>
+                        <div class="descriptive" id="description">
+                            The dark does not hide you from the Grue.  You are crushed into the pit of blackness, 
+                            suffocating as you spiral <a class='activateBtn' data-target='DOWN' href='#'>down</a> 
+                            towards that noise, always that noise.                            
+                        </div>
+                    </div> 
+                    <div class="inventory">
+                    </div>                    
+                </footer>
+            </div>          
+        </a-scene>
+    </three60> 
+    <script src="logic.js"></script>
+    <script src="utility.js"></script>         
+  </body>
+</html>

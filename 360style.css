@@ -98,14 +98,6 @@ a {
     object-fit: cover;
 }
 
-/*
-@media screen and (max-width: 990px) {
-    .infoimage {
-        background-position: 150dvh;
-    }
-}
-*/
-
 @media all and (max-width: 900px) {
     .infospace {
         flex: 4 0px;
@@ -127,7 +119,7 @@ a {
     }
     .descriptive {
         order: 1;
-        font-size: large;
+        font-size: larger;
     }
     .descriptive #title {
         display: none;
