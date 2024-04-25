@@ -19,8 +19,8 @@ function handleButtonClick(buttonId) {
 	let innerv3 = "";
 	let feedback;
 	let newURL;
-	alert(buttonId);
-	alert("handleButtonClick " + tURL);
+	//alert(buttonId);
+	//alert("handleButtonClick " + tURL);
 
 
 	if (buttonId === "LOOK") {
