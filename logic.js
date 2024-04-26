@@ -2,14 +2,14 @@
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    //Get all the localStorage settings and apply to the html
-    //localStorage.setItem("lastthought", "Nooooooooo");
-    //document.getElementById("innerv1").innerHTML = localStorage.getItem("lastthought");
-    
+    //Get all the localStorage and other settings and apply to the html
+
+    //Inner Voices
     document.getElementById("innerv1").innerHTML = localStorage.getItem("innervoice1");
     document.getElementById("innerv2").innerHTML = localStorage.getItem("innervoice2");
     document.getElementById("innerv3").innerHTML = localStorage.getItem("innervoice3");
     
+    //Title on menu ubar
     document.getElementById("mtitle").innerHTML = document.getElementById("title").innerHTML;
 
     //Get the webpage name and add it to local storage only if it is not there already
@@ -20,6 +20,15 @@ document.addEventListener("DOMContentLoaded", function() {
     //  0 = visited  the page but no look command used
     //  1 = visited and looked
     var lookflag = 0;
+    var timeflag = 0;
+
+    timeflag = localStorage.getItem("lectern.html");
+    if (timeflag === 1) {
+        //the lectern has been LOOKed and the clock discovered
+        document.getElementById("gtime").display = "block";
+    } else {
+        document.getElementById("gtime").display = "none";
+    }
 
     lookflag = localStorage.getItem(tURL);
     if (!lookflag) {
@@ -27,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     //if there is a lookflag of 1 set the a href links to hot pink
-    if (lookflag == 1) {
+    if (lookflag === 1) {
         looklinks();
     }
    
