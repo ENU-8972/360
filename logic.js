@@ -249,7 +249,7 @@ function handleButtonClick(buttonId) {
 	switch (tURL) {
 
         case "Look":
-            break;
+           break;
 
 		case "awake.html":
 			switch (buttonId) {
@@ -483,11 +483,11 @@ function handleButtonClick(buttonId) {
 		case "lectern.html":
 			switch (buttonId) {
 
-				case "LOOK":
+				case "USE":
 					navigate = false;
-					newURL = "lecture_stage_lit.html";
-					innerv1 = "Excellent the screen shows the time";
-					innerv2 = "Now I can keep track.";
+					newURL = "lectern.html";
+					innerv1 = "Excellent the screen has a clock";
+					innerv2 = "now I can keep track of time.";
 					break;
 
 				case "W":

@@ -196,7 +196,7 @@ a {
     z-index: 1000;
     border: 2px;
     display: none;
-    /*padding: 0.5%;*/
+    padding: 2px;
 }
 
 .menu {
@@ -214,12 +214,12 @@ a {
 }
 
 .mtitle {
-    font-size: xx-large;
+    font-size: x-large;
     color: rgba(243, 243, 243, 0.8);
     z-index: 1000;
     display: block;
-    width: fit-content;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: center;
 }
 
 .content {
