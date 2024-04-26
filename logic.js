@@ -443,7 +443,8 @@ function handleButtonClick(buttonId) {
 				case "USE":
 					navigate = true;
 					newURL = "lecture_stage_lit.html";
-					innerv2 = "Thank goodness for that.";
+                    innerv1 = "What was that noise?"
+					innerv2 = "Loud scrabbling from the back row";
 					break;
 
 				default:
