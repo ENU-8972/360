@@ -23,8 +23,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var timeflag = 0;
 
     timeflag = localStorage.getItem("lectern.html");
+    alert(timeflag);
     if (timeflag === 1) {
         //the lectern has been LOOKed and the clock discovered
+        updatescreentime();
         document.getElementById("gtime").display = "block";
     } else {
         document.getElementById("gtime").display = "none";
