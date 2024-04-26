@@ -86,7 +86,7 @@ function handleButtonClick(buttonId) {
 
 				case "NE":
 					navigate = false;
-					newURL = "lecturn.html";
+					newURL = "lectern.html";
 					innerv1 = "No way, too creepy!";
 					innerv2 = "Head to the light.";
 					break;
@@ -128,7 +128,7 @@ function handleButtonClick(buttonId) {
 				case "LOOK":
 					//Piece of paper
 					navigate = false;
-					newURL = "lecturn.html";
+					newURL = "lectern.html";
 					break;
 
 				default:
@@ -158,7 +158,7 @@ function handleButtonClick(buttonId) {
 
 				case "E":
 					navigate = false;
-					newURL = "lecturn.html";
+					newURL = "lectern.html";
 					innerv2 = "It is too dark over there";
 					innerv3 = "and I'm scared of the dark";
 					break;
@@ -231,7 +231,7 @@ function handleButtonClick(buttonId) {
 
 				case "E":
 					navigate = true;
-					newURL = "lecturn.html";
+					newURL = "lectern.html";
 					break;
 
 				case "W":
@@ -252,7 +252,7 @@ function handleButtonClick(buttonId) {
 			}
 			break;
 
-		case "lecturn.html":
+		case "lectern.html":
 			switch (buttonId) {
 
 				case "W":
