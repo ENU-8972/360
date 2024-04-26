@@ -31,6 +31,18 @@ document.addEventListener("DOMContentLoaded", function() {
         looklinks();
     }
    
+    //Update the time shown on screen
+    updatescreentime();
+    
+    clearinnervoicestorage();
+
+    //alert("updt");
+    updategametime();
+});
+
+
+function updatescreentime() {
+
     //var thisgtime = new Date();
     var thisgtime = new Date(localStorage.getItem("gametime"));   
     var ghours = thisgtime.getHours();
@@ -41,12 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("gtime").innerHTML = ghours + ":" + gmins;
 
-    clearinnervoicestorage();
-
-    //alert("updt");
-    updategametime();
-});
-
+}
 
 //Stop mouse down scrolling from selecting text when moving the a-frame
 var mouseDown = false;
@@ -65,7 +72,7 @@ document.addEventListener("mouseup", function(event){
 document.addEventListener("mousemove", function(event) {
     if (mouseDown) {  //true
         event.preventDefault();
-    }
+    } 
 });
 
 
