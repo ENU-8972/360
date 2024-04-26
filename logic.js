@@ -315,6 +315,7 @@ function handleButtonClick(buttonId) {
 		localStorage.setItem(tURL, 1);
         innerv3 = "Look what I found";
         updategametime();
+        updatescreentime();
         tURL = "Look";
 	};
 
@@ -332,6 +333,11 @@ function handleButtonClick(buttonId) {
                     innerv2 = "My laptop and bag, gone."
 					newURL = "lectureUp.html";
 					break;
+                
+                case "DOWN":
+                    navigate = true;
+                    newURL = "index.html";
+                    break;
 
 				default:
 					innerv3 = noperesponse();
@@ -419,10 +425,12 @@ function handleButtonClick(buttonId) {
 					newURL = "stairs7.html";
 					break;
 
-				case "LOOK":
+				case "USE":
 					//Piece of paper
 					navigate = false;
 					newURL = "lectern.html";
+                    innerv1 = "It says - dark = GRUE!";
+                    innerv2 = "hmmmm, that sounds bad";
 					break;
 
 				default:
