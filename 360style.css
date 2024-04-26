@@ -213,7 +213,7 @@ a {
 }
 
 .mtitle {
-    font-size: larger;
+    font-size: xx-large;
     color: rgba(243, 243, 243, 0.8);
     z-index: 1000;
     display: block;
