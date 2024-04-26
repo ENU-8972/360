@@ -9,8 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("innerv2").innerHTML = localStorage.getItem("innervoice2");
     document.getElementById("innerv3").innerHTML = localStorage.getItem("innervoice3");
     
+
     //Title on menu ubar
     document.getElementById("mtitle").innerHTML = document.getElementById("title").innerHTML;
+
 
     //Get the webpage name and add it to local storage only if it is not there already
     var urls = window.location.href;
@@ -23,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var timeflag = 0;
 
     timeflag = localStorage.getItem("lectern.html");
-    alert(timeflag);
+    //alert(timeflag);
     if (timeflag === 1) {
         //the lectern has been LOOKed and the clock discovered
         updatescreentime();
