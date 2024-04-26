@@ -307,11 +307,17 @@ function handleButtonClick(buttonId) {
 	if (buttonId === "LOOK") {
         //alert("Setting look");
 		localStorage.setItem(tURL, 1);
+        innerv3 = "Look what I found";
         //alert("look: " + localStorage.getItem(tURL));
+        tURL = "Look";
 	};
 
 
 	switch (tURL) {
+
+        case "Look":
+            break;
+
 		case "awake.html":
 			switch (buttonId) {
 				case "UP":
@@ -977,7 +983,6 @@ function handleButtonClick(buttonId) {
 	if (innerv1 !== "") {
 		localStorage.setItem("innervoice1", innerv1);
 		document.getElementById("innerv1").innerHTML = innerv1;
-
 	}
 
 	if (innerv2 !== "") {
