@@ -117,13 +117,14 @@ a {
     }
     .descriptive {
         order: 1;
-        font-size: larger;
+        font-size: x-large;
     }
     .descriptive #title {
         display: none;
     }
     .mtitle {
         display: block;
+        font-size: x-large;
     }
 }
 
