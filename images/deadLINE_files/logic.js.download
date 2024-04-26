@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
    
     //Update the time shown on screen
     updatescreentime();
-
+    
     clearinnervoicestorage();
 
     //alert("updt");
@@ -967,7 +967,7 @@ function handleButtonClick(buttonId) {
 
 				case "N":
 					navigate = true;
-					newURL = "duct_exit.html";
+					newURL = "maze_exit.html";
 					break;
 
 				case "W":
