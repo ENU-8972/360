@@ -912,11 +912,16 @@ function handleButtonClick(buttonId) {
 		case "maze_v.html":
 			switch (buttonId) {
 
-				case "DOWN":
+				case "N":
 					navigate = true;
 					newURL = "awake.html";
 					break;
 
+                case "E":
+                    navigate = true;
+                    newURL = "awake.html";
+                    break;
+    
 				default:
 					innerv3 = noperesponse();
 			}
