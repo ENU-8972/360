@@ -950,7 +950,7 @@ function handleButtonClick(buttonId) {
 
 				case "N":
 					navigate = true;
-					newURL = "maze_y.html";
+					newURL = "maze_exit.html";
 					break;
 
 				case "W":
