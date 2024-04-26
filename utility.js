@@ -105,6 +105,14 @@ function updategametime() {
     localStorage.setItem("gametime", thisDate);  
 };
 
+//Add an event listener for the look button being clicked
+var e = document.getElementById("LOOK")
+if (e) {
+	e.addEventListener("click", function() {
+		looklinks();
+	});
+}
+
 function looklinks() {
     //Set the a and href links to hot pink when the LOOK command is used
     
