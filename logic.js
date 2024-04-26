@@ -608,15 +608,15 @@ function handleButtonClick(buttonId) {
 			}
 			break;
 
-		case "maze_y.html":
+		case "duct_exit.html":
 			switch (buttonId) {
 
 				case "S":
 					navigate = true;
-					newURL = "maze_p.html";
+					newURL = "maze_b.html";
 					break;
 
-				case "W":
+				case "D":
 					navigate = true;
 					newURL = "maze_s.html";
 					break;
