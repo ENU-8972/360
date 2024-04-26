@@ -305,10 +305,9 @@ function handleButtonClick(buttonId) {
 	//alert("handleButtonClick " + tURL);
 
 	if (buttonId === "LOOK") {
-        //alert("Setting look");
 		localStorage.setItem(tURL, 1);
         innerv3 = "Look what I found";
-        //alert("look: " + localStorage.getItem(tURL));
+        updategametime();
         tURL = "Look";
 	};
 
