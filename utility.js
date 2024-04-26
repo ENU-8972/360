@@ -11,29 +11,40 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("innerv3").innerHTML = localStorage.getItem("innervoice3");
     
     document.getElementById("mtitle").innerHTML = document.getElementById("title").innerHTML;
-    
-    //var thisgtime = new Date();
-    var thisgtime = new Date(localStorage.getItem("gametime"));
 
-    alert(thisgtime);
-    
+    //Get the webpage name and add it to local storage only if it is not there already
+    var urls = window.location.href;
+	const tURL = urls.substring(urls.lastIndexOf('/') + 1).replace('#', '');
+
+    //Create a flag for each page 
+    //  0 = visited  the page but no look command used
+    //  1 = visited and looked
+    var lookflag = 0;
+
+    lookflag = localStorage.getItem(tURL);
+    if (!lookflag) {
+        localStorage.setItem(tURL, 0);    
+    }
+
+    //if there is a lookflag of 1 set the a href links to hot pink
+    if (lookflag == 1) {
+        looklinks();
+    }
+   
+    //var thisgtime = new Date();
+    var thisgtime = new Date(localStorage.getItem("gametime"));   
     var ghours = thisgtime.getHours();
     var gmins = thisgtime.getMinutes();
 
-    alert(ghours);
-    alert(gmins);
+    //alert(ghours + ":" + gmins);
+    //alert(gmins);
 
-    //document.getElementById("gtime").innerHTML = thisgtime.getHours().toString + ":" + thisgtime.getMinutes().toString;
+    document.getElementById("gtime").innerHTML = ghours + ":" + gmins;
 
     clearinnervoicestorage();
 
-    alert("updt");
+    //alert("updt");
     updategametime();
-
-    //const linklist = document.querySelectorAll("activateBtn");
-    //linklist.forEach(e); {
-    //    e.style.color = hotpink;
-    // };
 });
 
 
@@ -66,7 +77,6 @@ document.addEventListener("dblclick", function(event) {
 });
 
 
-
 /*  Auto play no worky for me
 document.addEventListener("DOMContentLoaded", function() {
     //Auto play check to see if it is running
@@ -89,13 +99,84 @@ document.addEventListener("DOMContentLoaded", function() {
 function updategametime() {    
     //Read the gametime localstorage field and update this
     //by a minute everytime a page is loaded
-
     var thisDate = new Date(localStorage.getItem("gametime"));
     thisDate.setMinutes(thisDate.getMinutes() + 1);
-    alert("bf storage" + thisDate);
+    //alert("bf storage" + thisDate);
     localStorage.setItem("gametime", thisDate);  
 };
 
+function looklinks() {
+    //Set the a and href links to hot pink when the LOOK command is used
+    
+    /* //Can't get this to work.  I have instead given an id to all the actionBtn
+    // instances and will try setting the colour by getElementById
+    var col_link = document.getElementsByClassName("activateBtn");
+    col_link.forEach(function(element) {
+       // alert(element.innerHTML);
+        element.style.color = "red";
+    });
+    */
+    
+    var e = document.getElementById("dUP")
+    if (e) {
+            document.getElementById("dUP").style.color = 'hotpink';
+        }
+
+    var e = document.getElementById("dDOWN")
+    if (e) {
+            document.getElementById("dDOWN").style.color = 'hotpink';
+        }
+
+    var e = document.getElementById("dNW")
+    if (e) {
+            document.getElementById("dNW").style.color = 'hotpink';
+        }
+
+    var e = document.getElementById("dN")
+    if (e) {
+            document.getElementById("dN").style.color = 'hotpink';
+        }
+
+    var e = document.getElementById("dNE")
+    if (e) {
+            document.getElementById("dNE").style.color = 'hotpink';
+        }
+
+    var e = document.getElementById("dW")
+    if (e) {
+            document.getElementById("dW").style.color = 'hotpink';
+        }
+
+    var e = document.getElementById("dE")
+    if (e) {
+            document.getElementById("dE").style.color = 'hotpink';
+        }
+
+    var e = document.getElementById("dSW")
+    if (e) {
+            document.getElementById("dSW").style.color = 'hotpink';
+        }
+
+    var e = document.getElementById("dS")
+    if (e) {
+            document.getElementById("dS").style.color = 'hotpink';
+        }
+
+    var e = document.getElementById("dSE")
+    if (e) {
+            document.getElementById("dSE").style.color = 'hotpink';
+        }
+
+    var e = document.getElementById("dLOOK")
+    if (e) {
+            document.getElementById("dLOOK").style.color = 'hotpink';
+        }
+
+    var e = document.getElementById("dUSE")
+    if (e) {
+            document.getElementById("dUSE").style.color = 'hotpink';
+        }
+};
 
 
 function toggleVideoCheckin() {
@@ -176,6 +257,6 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     var scrWidth = window.innerWidth;
     var scrHeight = window.innerHeight;
-    alert('h:' + scrHeight + ' w:' + scrWidth );
+    //alert('h:' + scrHeight + ' w:' + scrWidth );
 });
 */

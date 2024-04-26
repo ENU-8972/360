@@ -4,7 +4,7 @@
 , "inventory":{"slot1":"empty", "slot2":"empty","slot3":"empty"}
 , "lastthought":"empty"
 , "location":{"lectureUp.html":{  "name":"Lecture Seats"
-                                , "description":"Everyone has gone, your laptop has gone, silence.  Why did they leave me?  Standing in the semi dark, the main lights off, it is hard to see properly but the stairs to your <a class='activateBtn' data-target='E' href='#'>east</a> go <a class='activateBtn' data-target='UP' href='#'>up</a> and <a class='activateBtn' data-target='DOWN' href='#'>down</a>.  There are dark rows of seating all around and the side lighting makes everything look eerie, especially the massive air conditioning ducts above your head."
+                                , "description":"Everyone has gone, your laptop has gone, silence.  Why did they leave me?  Standing in the semi dark, the main lights off, it is hard to see properly but the stairs to your <a id="dE" class='activateBtn' data-target='E' href='#'>east</a> go <a id="dUP" class='activateBtn' data-target='UP' href='#'>up</a> and <a id="dDOWN" class='activateBtn' data-target='DOWN' href='#'>down</a>.  There are dark rows of seating all around and the side lighting makes everything look eerie, especially the massive air conditioning ducts above your head."
                                 , "visited":0
                                 , "locationstate":"dark"
                                 , "searched":0

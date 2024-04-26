@@ -22,9 +22,10 @@ function handleButtonClick(buttonId) {
 	//alert(buttonId);
 	//alert("handleButtonClick " + tURL);
 
-
 	if (buttonId === "LOOK") {
-		document.querySelectorAll(".activateBtn")
+        //alert("Setting look");
+		localStorage.setItem(tURL, 1);
+        //alert("look: " + localStorage.getItem(tURL));
 	};
 
 

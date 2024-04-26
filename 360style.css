@@ -3,12 +3,9 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.activateBtn {
-    color: hotpink;
-}
-
 a {
     text-decoration-line: none;
+    color: rgba(243, 243, 243, 0.8);
 }
 
 .barburger {
