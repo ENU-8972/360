@@ -257,8 +257,9 @@ function handleButtonClick(buttonId) {
 			switch (buttonId) {
 				case "UP":
 					navigate = true;
-                    innerv1 = "Silence... Everyone has gone"
-                    innerv2 = "My laptop and bag, gone."
+                    innerv1 = "Silence... Everyone has gone";
+                    innerv2 = "my laptop and bag, gone.";
+                    innerv3 = "";
 					newURL = "lectureUp.html";
 					break;
                 
@@ -317,6 +318,7 @@ function handleButtonClick(buttonId) {
 					newURL = "lectern.html";
 					innerv1 = "No way, too creepy!";
 					innerv2 = "Head to the light.";
+                    innerv3 = "";
 					break;
 
 				default:
@@ -359,6 +361,7 @@ function handleButtonClick(buttonId) {
 					newURL = "lectern.html";
                     innerv1 = "It says - dark = GRUE!";
                     innerv2 = "hmmmm, that sounds bad";
+                    innerv3 = "";
 					break;
 
 				default:
@@ -389,8 +392,9 @@ function handleButtonClick(buttonId) {
 				case "E":
 					navigate = false;
 					newURL = "lectern.html";
-					innerv2 = "It is too dark over there";
-					innerv3 = "and I'm scared of the dark";
+					innerv1 = "It is too dark over there";
+					innerv2 = "and I'm scared of the dark";
+                    innerv3 = "";
 					break;
 
 				case "S":
@@ -424,7 +428,9 @@ function handleButtonClick(buttonId) {
 				case "W":
 					navigate = true;
 					newURL = "awake.html";
-					innerv2 = "I don't think I should have touched that.";
+					innerv1 = "I don't think I should have touched that.";
+                    innerv2 = "What the hell happened";
+                    innerv3 = "and how am I back here on the floor";
 					break;
 
 				default:
@@ -443,8 +449,9 @@ function handleButtonClick(buttonId) {
 				case "USE":
 					navigate = true;
 					newURL = "lecture_stage_lit.html";
-                    innerv1 = "What was that noise?"
-					innerv2 = "Loud scrabbling from the back row";
+                    innerv1 = "What was that noise?";
+					innerv2 = "A loud metalic scrabbling from the back row";
+                    innerv3 = "as if Bruce Willis is in the pipes";
 					break;
 
 				default:
@@ -468,14 +475,18 @@ function handleButtonClick(buttonId) {
 				case "W":
 					navigate = true;
 					newURL = "awake.html";
-					innerv2 = "That surprised me...";
+					innerv1 = "That makes me feel weird...";
+                    innerv2 = "And now I'm back where I started";
+                    innerv3 = "face stuck to the carpet";
 					break;
 
 
 				case "USE":
 					navigate = true;
 					newURL = "lecturestage.html";
-					innerv2 = "Darkness and fear again; joy.";
+					innerv1 = "Darkness and fear again; joy.";
+                    innerv2 = "";
+                    innerv3 = "";
 					break;
 
 				default:
@@ -491,6 +502,7 @@ function handleButtonClick(buttonId) {
 					newURL = "lectern.html";
 					innerv1 = "Excellent the screen has a clock";
 					innerv2 = "now I can keep track of time.";
+                    innerv3 = "";
 					break;
 
 				case "W":
@@ -498,6 +510,7 @@ function handleButtonClick(buttonId) {
 					newURL = "lecture_stage_lit.html";
 					innerv1 = "I wonder what my grade will be, if I ever";
 					innerv2 = "get out of here.";
+                    innerv3 = "";
 					break;
                 
 
