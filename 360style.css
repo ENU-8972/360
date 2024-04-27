@@ -10,7 +10,7 @@ a {
 }
 
 .descriptive, .innervoice, .time, .mtitle {
-    font-size: 5hmin;
+    font-size: 3.5vmin;
 }
 
 .barburger {
@@ -131,6 +131,38 @@ a {
         /*font-size: x-large;*/
     }
 }
+
+
+/* Portrait orientation */
+@media screen and (orientation: portrait) {
+    .base {
+        flex-direction: column;
+    }
+    .grid-compass {
+        order: 2;
+    }
+    .descriptive {
+        order: 1;
+        /*font-size: x-large;*/
+    }
+    .descriptive #title {
+        display: none;
+    }
+    .mtitle {
+        display: block;
+        /*font-size: x-large;*/
+    }
+    .descriptive, .innervoice, .time, .mtitle {
+        font-size: 4vmin;
+    }    
+
+}
+
+/* Landscape orientation
+@media screen and (orientation: landscape) {
+
+}
+*/
 
 @keyframes blackin {
     from {
