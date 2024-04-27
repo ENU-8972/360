@@ -9,9 +9,10 @@ a {
     color: rgba(243, 243, 243, 0.8);
 }
 
-.descriptive, .innervoice, .time, .mtitle {
+.descriptive, .innervoice, .compassbtn .time, .mtitle {
     font-size: 3.5vmin;
 }
+
 
 .barburger {
     display: inline-block;
@@ -153,7 +154,7 @@ a {
         display: block;
         /*font-size: x-large;*/
     }
-    .descriptive, .time, .mtitle {
+    .descriptive, .compassbtn, .time, .mtitle {
         font-size: 4vmin;
     }  
     .grid-compass {
