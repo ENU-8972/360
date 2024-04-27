@@ -329,6 +329,10 @@ footer {
     font: x-large;
 }
 
+.descriptive .lastline {
+    float: right;
+}
+
 .inventory {
     background-color: rgba(163, 167, 167);
     text-align: center;

@@ -851,14 +851,19 @@ function handleButtonClick(buttonId) {
 		case "duct_exit.html":
 			switch (buttonId) {
 
+                case "USE":
+					navigate = true;
+					newURL = "end.html";
+					break;
+
 				case "S":
 					navigate = true;
 					newURL = "maze_b.html";
 					break;
 
-				case "D":
+				case "DOWN":
 					navigate = true;
-					newURL = "maze_s.html";
+					newURL = "index.html";
 					break;
 
 				default:
@@ -913,6 +918,7 @@ function handleButtonClick(buttonId) {
 				case "N":
 					navigate = true;
 					newURL = "duct_exit.html";
+                    innerv1 = "I'm free";
 					break;
 
 				case "W":
