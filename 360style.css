@@ -386,11 +386,11 @@ footer {
 
 .innervoice {
     width: fit-content;
-    height: 15%;
-    padding: 10px;
+    height: fit-content;
+    padding: 8px;
     background: rgba(30, 30, 30, 0.45);
     color: rgba(243, 243, 243, 0.8);
-    margin: 10px;
+    margin: 8px;
     border-radius: 15px;
 }
 
