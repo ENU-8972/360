@@ -4,15 +4,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     //Get all the localStorage and other settings and apply to the html
 
+    //Title on menu ubar
+    document.getElementById("mtitle").innerHTML = document.getElementById("title").innerHTML;
+
     //Inner Voices
     document.getElementById("innerv1").innerHTML = localStorage.getItem("innervoice1");
     document.getElementById("innerv2").innerHTML = localStorage.getItem("innervoice2");
     document.getElementById("innerv3").innerHTML = localStorage.getItem("innervoice3");
-    
-
-    //Title on menu ubar
-    document.getElementById("mtitle").innerHTML = document.getElementById("title").innerHTML;
-
 
     //Get the webpage name and add it to local storage only if it is not there already
     var urls = window.location.href;
@@ -23,24 +21,36 @@ document.addEventListener("DOMContentLoaded", function() {
     //  1 = visited and looked
     var lookflag = 0;
     var timeflag = 0;
+    var switchflag = 0;
 
+    switchflag = localStorage.getItem("lecture_stage_lit.html");
+    if (switchflag) {
+        document.getElementById("burger").style.display = "inline-block";
+    } else {
+        document.getElementById("burger").style.display = "none";
+    }
+    
     timeflag = localStorage.getItem("lectern.html");
     //alert(timeflag);
-    if (timeflag === 1) {
+    if (timeflag == 1) {
         //the lectern has been LOOKed and the clock discovered
-        updatescreentime();
-        document.getElementById("gtime").display = "block";
+        //updatescreentime();
+        document.getElementById("gtime").style.display = "block";
     } else {
-        document.getElementById("gtime").display = "none";
+        document.getElementById("gtime").style.display = "none";
     }
 
+    var lookflag = 0;
     lookflag = localStorage.getItem(tURL);
+    //alert(tURL + " : " + lookflag);
     if (!lookflag) {
         localStorage.setItem(tURL, 0);    
     }
+    //alert("pre call");
 
     //if there is a lookflag of 1 set the a href links to hot pink
-    if (lookflag === 1) {
+    if (lookflag == 1) {
+        //alert("Call");
         looklinks();
     }
    
@@ -113,16 +123,7 @@ if (e) {
 
 function looklinks() {
     //Set the a and href links to hot pink when the LOOK command is used
-    
-    /* //Can't get this to work.  I have instead given an id to all the actionBtn
-    // instances and will try setting the colour by getElementById
-    var col_link = document.getElementsByClassName("activateBtn");
-    col_link.forEach(function(element) {
-       // alert(element.innerHTML);
-        element.style.color = "red";
-    });
-    */
-    
+
     var e = document.getElementById("dUP")
     if (e) {
             document.getElementById("dUP").style.color = 'hotpink';
@@ -269,7 +270,7 @@ function handleButtonClick(buttonId) {
                     break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -292,7 +293,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -322,7 +323,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -339,7 +340,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -365,7 +366,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -378,7 +379,7 @@ function handleButtonClick(buttonId) {
                     break;
 
                 default:
-                    innerv3 = noperesponse();
+                    innerv3 = noperesponse(buttonId);
             }
             break;  
 
@@ -409,7 +410,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -434,7 +435,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -451,11 +452,11 @@ function handleButtonClick(buttonId) {
 					newURL = "lecture_stage_lit.html";
                     innerv1 = "What was that noise?";
 					innerv2 = "A loud metalic scrabbling from the back row";
-                    innerv3 = "as if Bruce Willis is in the pipes";
+                    innerv3 = "as if Die Hard is in the air ducts.";
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -490,7 +491,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -515,7 +516,7 @@ function handleButtonClick(buttonId) {
                 
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -528,7 +529,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -546,7 +547,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -569,7 +570,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -593,7 +594,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -616,7 +617,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -639,7 +640,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -652,7 +653,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -665,7 +666,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -678,7 +679,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -706,7 +707,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -729,7 +730,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -748,7 +749,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -762,7 +763,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -775,7 +776,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -798,7 +799,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -811,7 +812,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -834,7 +835,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -857,7 +858,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -880,7 +881,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -898,7 +899,7 @@ function handleButtonClick(buttonId) {
                     break;
     
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -921,7 +922,7 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
@@ -940,12 +941,12 @@ function handleButtonClick(buttonId) {
 					break;
 
 				default:
-					innerv3 = noperesponse();
+					innerv3 = noperesponse(buttonId);
 			}
 			break;
 
 		default:
-			innerv3 = noperesponse();
+			innerv3 = noperesponse(buttonId);
 	}
 
 	clearinnervoice();
@@ -1013,97 +1014,100 @@ function activateButtonClick(event) {
 };
 
 
-function noperesponse() {
+function noperesponse(buttonId) {
 	//Return a string response based random between 1-20, to increase variety in the response
-	var response;
+	var response = "";
 	var rnum = Math.floor(Math.random() * 20) + 1;
 
 	clearinnervoice();
 
-	switch (rnum) {
-		case 1:
-			response = "I have no way of doing that.";
-			break;
+    if (buttonId !== "LOOK") {
 
-		case 2:
-			response = "Nope, I can't do that."
-			break;
+        switch (rnum) {
+            case 1:
+                response = "I have no way of doing that.";
+                break;
 
-		case 3:
-			response = "Well that a'int happening."
-			break;
+            case 2:
+                response = "Nope, I can't do that."
+                break;
 
-		case 4:
-			response = "Not going to work."
-			break;
+            case 3:
+                response = "Well that a'int happening."
+                break;
 
-		case 5:
-			response = "I need to try something different."
-			break;
+            case 4:
+                response = "Not going to work."
+                break;
 
-		case 6:
-			response = "That's not possible."
-			break;
+            case 5:
+                response = "I need to try something different."
+                break;
 
-		case 7:
-			response = "I need to try something else."
-			break;
+            case 6:
+                response = "That's not possible."
+                break;
 
-		case 8:
-			response = "Perhaps a differnet way."
-			break;
+            case 7:
+                response = "I need to try something else."
+                break;
 
-		case 9:
-			response = "I'd like to but can't."
-			break;
+            case 8:
+                response = "Perhaps a differnet way."
+                break;
 
-		case 10:
-			response = "I would've thought that would work."
-			break;
+            case 9:
+                response = "I'd like to but can't."
+                break;
 
-		case 11:
-			response = "It's not possible."
-			break;
+            case 10:
+                response = "I would've thought that would work."
+                break;
 
-		case 12:
-			response = "If only, how frustraiting."
-			break;
+            case 11:
+                response = "It's not possible."
+                break;
 
-		case 13:
-			response = "Apparently I can't."
-			break;
+            case 12:
+                response = "If only, how frustraiting."
+                break;
 
-		case 14:
-			response = "Another day, perhaps."
-			break;
+            case 13:
+                response = "Apparently I can't."
+                break;
 
-		case 15:
-			response = "And for my next trick."
-			break;
+            case 14:
+                response = "Another day, perhaps."
+                break;
 
-		case 16:
-			response = "Alas, it seems not."
-			break;
+            case 15:
+                response = "And for my next trick."
+                break;
 
-		case 17:
-			response = "Not to be."
-			break;
+            case 16:
+                response = "Alas, it seems not."
+                break;
 
-		case 18:
-			response = "One day something is going to work."
-			break;
+            case 17:
+                response = "Not to be."
+                break;
 
-		case 19:
-			response = "Really, I thought that might work."
-			break;
+            case 18:
+                response = "One day something is going to work."
+                break;
 
-		case 20:
-			response = "Try something different."
-			break;
+            case 19:
+                response = "Really, I thought that might work."
+                break;
 
-		default:
-			response = "Ok, back to the drawing board."
-			break;
+            case 20:
+                response = "Try something different."
+                break;
+
+            default:
+                response = "Ok, back to the drawing board."
+                break;
+        }        
 	}
 
 	return response;

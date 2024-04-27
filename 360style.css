@@ -9,7 +9,7 @@ a {
     color: rgba(243, 243, 243, 0.8);
 }
 
-.descriptive, .innervoice, .compassbtn .time, .mtitle {
+.descriptive, .innervoice, .compassbtn {
     font-size: 3.5vmin;
 }
 
@@ -163,11 +163,13 @@ a {
 
 }
 
-/* Landscape
+/* Landscape */
 @media screen and (orientation: landscape) {
-
+    .descriptive {
+        font-size: 3.5vmin;
+    }
 }
-*/
+
 
 @keyframes blackin {
     from {
@@ -214,7 +216,6 @@ a {
 
 .header {
     display: flex;
-    flex-flow: row;
     background: rgba(30, 30, 30, 0.45);
     width: 100%;
     justify-content: space-between;
@@ -222,9 +223,15 @@ a {
     min-height: fit-content;
 }
 
+/*
+.time { width: 20% }
+.mtitle { width: 60% }
+.menu { width: 20% }
+*/
+
 .header > div {
     background: rgba(30, 30, 30, 0.45);
-    width: 100%;
+    width: 33.3333333%;
 }
 
 .time {
@@ -232,24 +239,25 @@ a {
     color: rgba(243, 243, 243, 0.8);
     justify-content: left;
     /*font-size: 30px;*/
-    height: inherit;
     z-index: 1000;
     border: 2px;
     display: none;
     padding: 2px;
+    width: auto;
 }
 
 .menu {
     flex: 0 1 auto;
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    */
+    width: auto;
     padding: 5px;
     text-align: right;
     z-index: 1000;
     justify-content: right;
-    height: inherit;
     display: block;
 }
 
@@ -258,8 +266,10 @@ a {
     color: rgba(243, 243, 243, 0.8);
     z-index: 1000;
     display: block;
-    width: 100%;
+    width: auto;
     justify-content: center;
+    border: 2px;
+    padding: 2px;
 }
 
 .content {
@@ -285,7 +295,7 @@ a {
 .base {
     margin-top: auto;
     margin-bottom: 10px;
-    flex: 0 1 auto;
+    flex: auto;
     display: flex;
     justify-content: space-between;
     min-height: max-content;
@@ -327,7 +337,6 @@ footer {
     background: rgba(30, 30, 30, 0.45);
     padding: 10px;
     border-radius: 15px;
-    min-width: 20vw;
     /*
     min-width: fit-content;
     min-height: fit-content;
