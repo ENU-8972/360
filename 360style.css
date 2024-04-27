@@ -155,7 +155,10 @@ a {
     }
     .descriptive, .time, .mtitle {
         font-size: 4vmin;
-    }    
+    }  
+    .grid-compass {
+        min-height: 15vh;
+    }  
 
 }
 
@@ -318,6 +321,7 @@ footer {
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(3, auto);
     width: auto;
+    height: auto;
     grid-gap: 5px;
     background: rgba(30, 30, 30, 0.45);
     padding: 10px;
