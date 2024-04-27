@@ -1,12 +1,16 @@
 body {
     background-color: #000;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: large;
+    /*font-size: large;*/
 }
 
 a {
     text-decoration-line: none;
     color: rgba(243, 243, 243, 0.8);
+}
+
+.descriptive, .innervoice, .time, .mtitle {
+    font-size: 2.5vmin;
 }
 
 .barburger {
@@ -117,14 +121,14 @@ a {
     }
     .descriptive {
         order: 1;
-        font-size: x-large;
+        /*font-size: x-large;*/
     }
     .descriptive #title {
         display: none;
     }
     .mtitle {
         display: block;
-        font-size: x-large;
+        /*font-size: x-large;*/
     }
 }
 
@@ -190,7 +194,7 @@ a {
     text-align: left;
     color: rgba(243, 243, 243, 0.8);
     justify-content: left;
-    font-size: 30px;
+    /*font-size: 30px;*/
     height: inherit;
     z-index: 1000;
     border: 2px;
@@ -213,7 +217,7 @@ a {
 }
 
 .mtitle {
-    font-size: x-large;
+    /*font-size: x-large;*/
     color: rgba(243, 243, 243, 0.8);
     z-index: 1000;
     display: block;
@@ -326,7 +330,7 @@ footer {
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
-    font: x-large;
+   /* font: x-large;*/
 }
 
 .descriptive .lastline {
@@ -337,7 +341,7 @@ footer {
     background-color: rgba(163, 167, 167);
     text-align: center;
     color: rgba(243, 243, 243, 0.8);
-    font-size: 12px;
+   /* font-size: 12px;*/
     height: max-content;
     width: 15vw;
 }
