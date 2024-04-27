@@ -221,6 +221,7 @@ a {
     justify-content: space-between;
     height: 5vh;
     min-height: fit-content;
+    z-index: 1000;
 }
 
 /*
@@ -230,7 +231,7 @@ a {
 */
 
 .header > div {
-    background: rgba(30, 30, 30, 0.45);
+    /*background: rgba(30, 30, 30, 0.45);*/
     width: 33.3333333%;
 }
 
