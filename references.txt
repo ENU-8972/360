@@ -25,3 +25,14 @@ https://www.w3schools.com/jsref/met_document_queryselectorall.asp
 
 Adding to time
 https://stackoverflow.com/questions/48442305/how-to-add-24-hr-format-into-total-hours-in-javascript
+https://stackoverflow.com/questions/37081984/javascript-gethours-not-working
+https://stackoverflow.com/questions/8036091/javascript-add-one-minute-to-time-object
+
+Flexbox
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+
+Screen orientation in CSS
+https://dev.to/smpnjn/how-to-detect-device-orientation-with-javascript-29e5
+
+Working with A-Frame
+https://moonrider.xyz/

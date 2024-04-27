@@ -135,7 +135,7 @@ a {
 */
 
 
-/* Portrait orientation */
+/* Portrait and landscape orientation */
 @media screen and (orientation: portrait) {
     .base {
         flex-direction: column;
@@ -163,7 +163,7 @@ a {
 
 }
 
-/* Landscape orientation
+/* Landscape
 @media screen and (orientation: landscape) {
 
 }
