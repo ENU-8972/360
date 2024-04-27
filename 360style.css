@@ -387,10 +387,10 @@ footer {
 .innervoice {
     width: fit-content;
     height: fit-content;
-    padding: 8px;
+    padding: 3px;
     background: rgba(30, 30, 30, 0.45);
     color: rgba(243, 243, 243, 0.8);
-
+    margin: 8px;
     border-radius: 15px;
 }
 
