@@ -69,7 +69,8 @@ function updatescreentime() {
     //var thisgtime = new Date();
     var thisgtime = new Date(localStorage.getItem("gametime"));   
     var ghours = thisgtime.getHours();
-    var gmins = thisgtime.getMinutes();
+    var gmins = "0" + thisgtime.getMinutes();
+    gmins = gmins.slice(-2);
 
     //alert(ghours + ":" + gmins);
     //alert(gmins);
@@ -244,10 +245,10 @@ function handleButtonClick(buttonId) {
 		localStorage.setItem(tURL, 1);
         innerv3 = "Look what I found";
         updategametime();
-        updatescreentime();
         tURL = "Look";
 	};
 
+    updatescreentime();
 
 	switch (tURL) {
 
