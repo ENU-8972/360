@@ -6,7 +6,8 @@ https://stackoverflow.com/questions/5429827/how-can-i-prevent-text-element-selec
 Fullscreen mode
 https://www.educative.io/answers/how-to-enable-full-screen-in-javascript
 
-Auktoplay video and sound
+Autoplay video and sound
+https://developer.chrome.com/blog/autoplay/
 https://stackoverflow.com/questions/65405988/autoplay-video-with-sound
 
 JavaScript SWITCH statement
