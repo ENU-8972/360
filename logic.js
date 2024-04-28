@@ -1123,10 +1123,42 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //Listen for Menu burger click
+/*
 var e = document.getElementsByClassName("burger.burgerbar")
 if (e) {
     document.getElementById("dropmenu").style.display = "block";
 }
+*/
+
+//Dropdown help from  https://www.w3schools.com/howto/howto_js_dropdown.asp
+function showmenu() {
+    //document.getElementById("dropmenu").classList.toggle("show");
+    alert("showmenu");
+    var e = document.getElementById("dropmenu")
+    if (e) {
+        alert("clicked");
+        document.getElementById("dropmenu").classList.toggle("show");
+        alert("done");
+    } else {
+        alert("not e");
+    }
+};
+
+/*
+//Close the W3schools inspired menu if clicked elsewhere
+window.onclick = function(event) {
+    if (!event.target.matches(".menusection")) {
+        var menudoptions = document.getElementsByClassName(".menuitem");
+            var m;
+            for (m = 0; m < menudoptions.length; m++) {
+                var openmenu = menudoptions[m];
+                if (openmenu.classList.contains("show")) {
+                    openmenu.classList.remove("show");
+                }
+            }
+    }
+}
+*/
 
 //Listeners for compass navigation button clicks
 var e = document.getElementById("UP")

@@ -13,7 +13,6 @@ a {
     font-size: 3.5vmin;
 }
 
-
 .barburger {
     display: inline-block;
     cursor: pointer;
@@ -298,7 +297,7 @@ a {
     padding-top: 1vh;
     padding-bottom: 1vh;
     width:fit-content;
-
+    display: block;
 }
 
 .unavailable {
@@ -307,6 +306,9 @@ a {
     color: rgb(94, 94, 94);
 }
 
+.show {
+    display: block;
+}
 
 .mtitle {
     /*font-size: x-large;*/
