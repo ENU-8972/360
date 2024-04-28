@@ -1133,14 +1133,10 @@ if (e) {
 //Dropdown help from  https://www.w3schools.com/howto/howto_js_dropdown.asp
 function showmenu() {
     //document.getElementById("dropmenu").classList.toggle("show");
-    alert("showmenu");
     var e = document.getElementById("dropmenu")
     if (e) {
-        alert("clicked");
         document.getElementById("dropmenu").classList.toggle("show");
-        alert("done");
     } else {
-        alert("not e");
     }
 };
 
