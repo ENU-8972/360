@@ -36,3 +36,6 @@ https://dev.to/smpnjn/how-to-detect-device-orientation-with-javascript-29e5
 
 Working with A-Frame
 https://moonrider.xyz/
+
+Menu unavailable and lines
+https://stackoverflow.com/questions/15643505/how-can-i-disable-a-specific-li-element-inside-a-ul

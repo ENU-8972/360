@@ -1122,6 +1122,12 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 });
 
+//Listen for Menu burger click
+var e = document.getElementsByClassName("burger.burgerbar")
+if (e) {
+    document.getElementById("dropmenu").style.display = "block";
+}
+
 //Listeners for compass navigation button clicks
 var e = document.getElementById("UP")
 if (e) {
