@@ -150,11 +150,16 @@ a {
     .descriptive #title {
         display: none;
     }
+
+    .time {
+        font-size: 5vmin;
+    }
+
     .mtitle {
         display: block;
-        /*font-size: x-large;*/
+        font-size: 5vmin;
     }
-    .descriptive, .compassbtn, .time, .mtitle {
+    .descriptive, .compassbtn {
         font-size: 4vmin;
     }  
     .grid-compass {
@@ -214,13 +219,22 @@ a {
     z-index: 1000;
 }
 
+.menubacker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(30, 30, 30, 0.45);
+    z-index: 1000;
+    width: 100%;
+    height: 5vh;
+}
+
 .header {
-    display: flex;
+    display: flex block;
     background: rgba(30, 30, 30, 0.45);
     width: 100%;
     justify-content: space-between;
     height: 5vh;
-    min-height: fit-content;
     z-index: 1000;
 }
 
@@ -232,26 +246,22 @@ a {
 
 .header > div {
     /*background: rgba(30, 30, 30, 0.45);*/
-    width: 33.3333333%;
+    width: auto;
 }
 
 .time {
     text-align: left;
     color: rgba(243, 243, 243, 0.8);
     justify-content: left;
-    /*font-size: 30px;*/
     z-index: 1000;
     display: none;
     width: auto;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .menu {
     flex: 0 1 auto;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    */
     width: auto;
     padding: 5px;
     text-align: right;
@@ -266,6 +276,7 @@ a {
     z-index: 1000;
     display: block;
     width: auto;
+    padding-top: 10px;
     justify-content: center;
 }
 
